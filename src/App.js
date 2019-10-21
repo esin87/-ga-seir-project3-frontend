@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='navBar'>
       <nav>
-        <h2>Dang-Good Desserts Zone</h2>
         <ul>
+          <li><a href='/'></a></li>
           <li><a className='navIcon' href='/'>Home</a></li>
           <li><a className='navIcon' href='#'>Create Recipe</a></li>
         </ul>
