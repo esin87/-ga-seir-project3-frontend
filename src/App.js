@@ -4,14 +4,16 @@ import Dashboard from './components/dashboard';
 
 function App() {
   return (
-    <div className='navBar'>
-      <nav>
-        <ul>
-          <li><a href='/'></a></li>
-          <li><a className='navIcon' href='/'>Home</a></li>
-          <li><a className='navIcon' href='#'>Create Recipe</a></li>
-        </ul>
-      </nav>
+    <div>
+      <div className='navBox'>
+        <h1><a className='logo' href='/'>Dang-Good Desserts Zone</a></h1>
+        <nav>
+          <ul>
+            <li><a className='navLinks' href='/'>Home</a></li>
+            <li><a className='navLinks' href='/'>Create Recipe</a></li>
+          </ul>
+        </nav>
+      </div>
       <body>
         <Dashboard/>
       </body>
