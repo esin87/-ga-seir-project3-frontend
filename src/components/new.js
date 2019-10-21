@@ -14,7 +14,7 @@ class New extends Component {
         Category
         <select>
           <option value="cakes">Cakes</option>
-          <option value="brownies">Brownies</option>
+          <option value="brownies">Brownies</option>git 
           <option value="cookies">Cookies</option>
           <option value="pastries">Pastries</option>
           <option value="pies">Pies</option>
