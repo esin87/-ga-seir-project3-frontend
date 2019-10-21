@@ -1,41 +1,53 @@
 *{
   box-sizing: border-box;
   list-style: none;
-}
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  margin:0;
+  padding:0;
 }
 
 /* NAV */
 
-nav{
-  border:1px solid black;
+nav ul li a{
+  text-decoration: none;
+}
+
+nav ul li{
+  display:inline-block;
+  margin: 0 10px;
 }
 
 
-
-.navIcon{
+.logo{
+  float:left;
+  font-size:30px;
   text-decoration: none;
   color:black;
 }
 
 
+
+
+nav{
+  padding:10px;
+}
+
+.navLinks{
+  text-decoration: none;
+  color:black;
+}
+
+.navLinks:hover{
+  color:white;
+}
+
+
+.navBox{
+  border:1px solid black;
+  display:flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right top, #c8d0dc, #b5c6cd, #a7bab9, #9faea5, #9ca093);
+}
+
+
+
+/* BODY */
