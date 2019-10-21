@@ -5,7 +5,7 @@ import Dashboard from './components/dashboard';
 
 function App() {
   return (
-    <div>
+    <div className='navBar'>
       <nav>
         <h2>Dang-Good Desserts Zone</h2>
         <ul>
