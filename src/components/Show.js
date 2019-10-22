@@ -26,22 +26,23 @@ class Show extends Component {
 			.then(response => {
 				this.setState({ dessert: response.data });
 			})
-			//.then(this.setIngredients())
 			.catch(err => {
 				console.error(err);
 			});
 	}
 
-	// having a a hard time figuring out how to map over an array that loads after page renders
-	//setIngredients() {
-	// 	var ingredients = this.state.dessert.items.map(item => {
-	// 		return <li>item</li>;
-	// 	});
-	// 	return ingredients;
-	// }
-
 	render() {
-		// console.log(this.state.dessert.items);
+		if (this.state.dessert.items) {
+			console.log(this.state.dessert.items);
+			var ingredientsList = this.state.dessert.items.map(item => (
+				<li>{item}</li>
+			));
+		}
+
+		if (this.state.dessert.steps) {
+			console.log(this.state.dessert.steps);
+			var stepsList = this.state.dessert.steps.map(item => <li>{item}</li>);
+		}
 		return (
 			<div className="show-container">
 				<div className="show-image-container">
@@ -52,9 +53,9 @@ class Show extends Component {
 					<p>Category: {this.state.dessert.category}</p>
 					<p>Description: {this.state.dessert.description}</p>
 					<h5>Ingredients</h5>
-					<p>Coming soon...</p>
+					<ul>{this.state.dessert.items && ingredientsList}</ul>
 					<h5>Steps to make</h5>
-					<p>Coming soon...</p>
+					<ul>{this.state.dessert.steps && stepsList}</ul>
 				</div>
 				<Link to={`/edit/${this.state.dessert.title}`}>Edit</Link>
 				<Link>Delete</Link>
