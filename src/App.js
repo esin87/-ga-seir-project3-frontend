@@ -4,6 +4,7 @@ import Dashboard from './components/dashboard';
 import { Route, Switch, Link, Redirect } from 'react-router-dom';
 import New from './components/New';
 import Show from './components/Show';
+import Edit from './components/Edit';
 
 function App() {
 	return (
@@ -37,6 +38,11 @@ function App() {
 						exact={true}
 						path="/titles/:title"
 						render={routerProps => <Show {...routerProps} />}
+					/>
+					<Route
+						exact={true}
+						path="/edit/:title"
+						render={routerProps => <Edit {...routerProps} />}
 					/>
 					<Redirect to="/recipes" component={Dashboard} />
 				</Switch>

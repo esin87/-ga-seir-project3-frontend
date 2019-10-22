@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../App.css';
+import { Link } from 'react-router-dom';
 //what is the below code for?
 import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
@@ -55,6 +56,8 @@ class Show extends Component {
 					<h5>Steps to make</h5>
 					<p>Coming soon...</p>
 				</div>
+				<Link to={`/edit/${this.state.dessert.title}`}>Edit</Link>
+				<Link>Delete</Link>
 			</div>
 		);
 	}
