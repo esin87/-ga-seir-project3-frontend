@@ -39,17 +39,17 @@ class Dashboard extends Component {
 				</Link>
 			);
 		});
-		return(
-			// <ul>{list}</ul>
-			<div>
-				<Cookies />
-				<Cakes />
-				<Candies/>
-				<Pastries/>
-				<Pies/>
-				<Other/>
-			</div>
-    ) 
+		return (
+			<ul>{list}</ul>
+			// <div>
+			// 	<Cookies />
+			// 	<Cakes />
+			// 	<Candies/>
+			// 	<Pastries/>
+			// 	<Pies/>
+			// 	<Other/>
+			// </div>
+		);
 	}
 }
 

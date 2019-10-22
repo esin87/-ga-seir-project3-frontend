@@ -5,10 +5,7 @@ import './New.css';
 class Edit extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			selectedDessert: this.props.match.params.title,
-			dessert: {}
-		};
+		this.state = {};
 
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -16,28 +13,20 @@ class Edit extends Component {
 
 	handleChange(evt) {
 		this.setState({
-			dessert: {
-				[evt.target.name]: evt.target.value
-			}
+			[evt.target.name]: evt.target.value
 		});
 	}
 
 	handleSubmit(evt) {
 		evt.preventDefault();
 
-		const dessert = {
-			title: this.state.dessert.title,
-			category: this.state.dessert.category,
-			description: this.state.dessert.description,
-			items: [this.state.dessert.items],
-			steps: [this.state.dessert.steps],
-			image: this.state.dessert.image
-		};
+		const dessert = this.state;
 
 		console.log(dessert);
+		console.log(this.state._id);
 
 		axios
-			.put(`http://localhost:3000/edit/${dessert.id}`, dessert)
+			.put('http://localhost:3000/edit/' + this.state._id, dessert)
 			.then(res => {
 				console.log(res);
 				console.log(res.data);
@@ -45,19 +34,25 @@ class Edit extends Component {
 			.catch(err => {
 				console.error(err);
 			});
+
+		this.props.history.push('/');
 	}
 
 	//   component did mount method that finds and returns dessert by title from db
 	componentDidMount() {
-		const dessert = this.state.selectedDessert;
-		const url = 'http://localhost:3000/titles/' + dessert;
+		console.log('component mounted');
+		const url =
+			'http://localhost:3000/titles/' + this.props.match.params.title;
 
 		axios
 			.get(url)
 			.then(response => {
-				this.setState({ dessert: response.data });
+				console.log(response.data);
+				this.setState(response.data);
 			})
-			//.then(this.setIngredients())
+			.then(response => {
+				console.log(this.state);
+			})
 			.catch(err => {
 				console.error(err);
 			});
@@ -73,7 +68,7 @@ class Edit extends Component {
 					<input
 						name="title"
 						type="text"
-						value={this.state.dessert.title}
+						value={this.state.title}
 						onChange={this.handleChange}
 					/>
 					{/* //category */}
@@ -81,7 +76,7 @@ class Edit extends Component {
 					<select
 						name="category"
 						onChange={this.handleChange}
-						value={this.state.dessert.category}>
+						value={this.state.category}>
 						<option value="Cakes">Cakes</option>
 						<option value="Brownies">Brownies</option>
 						<option value="Cookies">Cookies</option>
@@ -95,7 +90,7 @@ class Edit extends Component {
 					<input
 						name="description"
 						type="text"
-						value={this.state.dessert.description}
+						value={this.state.description}
 						onChange={this.handleChange}
 					/>
 					{/* //items */}
@@ -104,7 +99,7 @@ class Edit extends Component {
 						rows="5"
 						name="items"
 						type="text"
-						value={this.state.dessert.items}
+						value={this.state.items}
 						onChange={this.handleChange}
 					/>
 					{/* //steps */}
@@ -113,7 +108,7 @@ class Edit extends Component {
 						rows="14"
 						name="steps"
 						type="text"
-						value={this.state.dessert.steps}
+						value={this.state.steps}
 						onChange={this.handleChange}
 					/>
 					{/* //image */}
@@ -121,7 +116,7 @@ class Edit extends Component {
 					<input
 						name="image"
 						type="text"
-						value={this.state.dessert.image}
+						value={this.state.image}
 						onChange={this.handleChange}
 					/>
 					<input type="submit" value="Update" />

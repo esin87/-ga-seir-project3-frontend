@@ -3,44 +3,6 @@ import axios from 'axios';
 import './New.css';
 
 class New extends Component {
-<<<<<<< HEAD
-    handleSubmit(evt){alert ("you are submitting your recipe");
-    evt.preventDefault()
-}
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        {/* //title */}
-        Title
-        <input type="text" name="title" />
-        {/* //category */}
-        Category
-        <select>
-          <option value="cakes">Cakes</option>
-          <option value="brownies">Brownies</option>git 
-          <option value="cookies">Cookies</option>
-          <option value="pastries">Pastries</option>
-          <option value="pies">Pies</option>
-          <option value="candies">Candies</option>
-          <option value="other">Other Desserts</option>
-        </select>
-        {/* //description */}
-        Description
-        <input type="text" name="description" />
-        {/* //items */}
-        Items
-        <input type="text" name="items" />
-        {/* //steps */}
-        Steps
-        <input type="text" name="steps" />
-        {/* //image */}
-        Image URL
-        <input type="text" name="image" />
-        <input type="submit" value="Submit" />
-      </form>
-    );
-  }
-=======
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -86,7 +48,6 @@ class New extends Component {
 	}
 
 	render() {
-		console.log(this.props.history.push);
 		return (
 			<div>
 				<form onSubmit={this.handleSubmit}>
@@ -150,7 +111,6 @@ class New extends Component {
 			</div>
 		);
 	}
->>>>>>> 1df978e4740032fd92c6a6df757616bc75dd890c
 }
 
 export default New;
