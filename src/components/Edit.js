@@ -9,6 +9,42 @@ class Edit extends Component {
 			selectedDessert: this.props.match.params.title,
 			dessert: {}
 		};
+
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+	}
+
+	handleChange(evt) {
+		this.setState({
+			dessert: {
+				[evt.target.name]: evt.target.value
+			}
+		});
+	}
+
+	handleSubmit(evt) {
+		evt.preventDefault();
+
+		const dessert = {
+			title: this.state.dessert.title,
+			category: this.state.dessert.category,
+			description: this.state.dessert.description,
+			items: [this.state.dessert.items],
+			steps: [this.state.dessert.steps],
+			image: this.state.dessert.image
+		};
+
+		console.log(dessert);
+
+		axios
+			.put(`http://localhost:3000/${dessert.title}`, dessert)
+			.then(res => {
+				console.log(res);
+				console.log(res.data);
+			})
+			.catch(err => {
+				console.error(err);
+			});
 	}
 
 	//   component did mount method that finds and returns dessert by title from db
@@ -46,13 +82,13 @@ class Edit extends Component {
 						name="category"
 						onChange={this.handleChange}
 						value={this.state.dessert.category}>
-						<option value="cakes">Cakes</option>
-						<option value="brownies">Brownies</option>
-						<option value="cookies">Cookies</option>
-						<option value="pastries">Pastries</option>
-						<option value="pies">Pies</option>
-						<option value="candies">Candies</option>
-						<option value="other">Other Desserts</option>
+						<option value="Cakes">Cakes</option>
+						<option value="Brownies">Brownies</option>
+						<option value="Cookies">Cookies</option>
+						<option value="Pastries">Pastries</option>
+						<option value="Pies">Pies</option>
+						<option value="Candies">Candies</option>
+						<option value="Other">Other Desserts</option>
 					</select>
 					{/* //description */}
 					Description
@@ -64,7 +100,8 @@ class Edit extends Component {
 					/>
 					{/* //items */}
 					Items
-					<input
+					<textarea
+						rows="5"
 						name="items"
 						type="text"
 						value={this.state.dessert.items}
@@ -72,7 +109,8 @@ class Edit extends Component {
 					/>
 					{/* //steps */}
 					Steps
-					<input
+					<textarea
+						rows="14"
 						name="steps"
 						type="text"
 						value={this.state.dessert.steps}
