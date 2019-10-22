@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../App.css';
+//what is the below code for?
 import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
 class Show extends Component {
@@ -30,7 +31,8 @@ class Show extends Component {
 			});
 	}
 
-	// setIngredients() {
+	// having a a hard time figuring out how to map over an array that loads after page renders
+	//setIngredients() {
 	// 	var ingredients = this.state.dessert.items.map(item => {
 	// 		return <li>item</li>;
 	// 	});

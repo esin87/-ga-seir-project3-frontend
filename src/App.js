@@ -38,6 +38,7 @@ function App() {
 						path="/titles/:title"
 						render={routerProps => <Show {...routerProps} />}
 					/>
+					<Redirect to="/recipes" component={Dashboard} />
 				</Switch>
 			</main>
 		</div>

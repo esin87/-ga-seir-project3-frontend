@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+//what is the below code for?
 import { promised } from 'q';
 import { Link } from 'react-router-dom';
 
