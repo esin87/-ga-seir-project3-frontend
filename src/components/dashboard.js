@@ -9,6 +9,7 @@ import Candies from './Candies';
 import Pastries from './Pastries';
 import Pies from './Pies';
 import Other from './Others';
+import Brownies from './Brownies';
 //import Category from './Category';
 
 class Dashboard extends Component {
@@ -36,6 +37,9 @@ class Dashboard extends Component {
 				</Link>
 				<Link to="/categories/Pies">
 					<Pies />
+				</Link>
+				<Link to="/categories/Brownies">
+					<Brownies />
 				</Link>
 				<Link to="/categories/Other">
 					<Other />

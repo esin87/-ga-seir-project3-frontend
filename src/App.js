@@ -7,6 +7,7 @@ import Show from './components/Show';
 import Edit from './components/Edit';
 import Category from './components/Category';
 
+
 function App() {
 	return (
 		<div>
