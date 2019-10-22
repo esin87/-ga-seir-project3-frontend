@@ -3,6 +3,7 @@ import './App.css';
 import Dashboard from './components/dashboard';
 import { Route, Switch, Link, Redirect } from 'react-router-dom';
 import New from './components/New';
+import Show from './components/Show';
 
 function App() {
 	return (
@@ -28,12 +29,17 @@ function App() {
 					</ul>
 				</nav>
 			</div>
-			<body>
+			<main>
 				<Switch>
 					<Route path="/" exact={true} component={Dashboard} />
 					<Route path="/create" exact={true} component={New} />
+					<Route
+						exact={true}
+						path="/titles/:title"
+						render={routerProps => <Show {...routerProps} />}
+					/>
 				</Switch>
-			</body>
+			</main>
 		</div>
 	);
 }
