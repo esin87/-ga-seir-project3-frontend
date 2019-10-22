@@ -51,3 +51,9 @@ nav{
 
 
 /* BODY */
+
+main{
+  background-image:url('./Project-3-Pictures/table/table.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
