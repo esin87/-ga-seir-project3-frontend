@@ -1,9 +1,15 @@
 
 
 img{
-  width:25%;
+  width:20%;
 }
 
 div{
   border:1px solid black;
+}
+
+.cookieBox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
