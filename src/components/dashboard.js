@@ -3,6 +3,7 @@ import axios from 'axios';
 //what is the below code for?
 import { promised } from 'q';
 import { Link } from 'react-router-dom';
+import './dashboard.css';
 import Cookies from './Cookies';
 import Cakes from './Cakes';
 import Candies from './Candies';

@@ -6,7 +6,8 @@ class Cakes extends Component{
     return(
       <div>
         <img src={require('../Project-3-Pictures/cakes/tiramisu.png')} alt='cakes'></img>
-        <h3>cakes</h3>
+        <h3>Cakes</h3>
+
       </div>
     )
   }
