@@ -7,7 +7,7 @@ class New extends Component {
 		super(props);
 		this.state = {
 			title: '',
-			category: '',
+			category: 'Cakes',
 			description: '',
 			items: [],
 			steps: [],
@@ -35,8 +35,6 @@ class New extends Component {
 			steps: [this.state.steps],
 			image: this.state.image
 		};
-
-		console.log(dessert);
 
 		axios.post('http://localhost:3000/create', dessert).catch(err => {
 			console.error(err);
@@ -66,13 +64,13 @@ class New extends Component {
 						name="category"
 						onChange={this.handleChange}
 						value={this.state.category}>
-						<option value="cakes">Cakes</option>
-						<option value="brownies">Brownies</option>
-						<option value="cookies">Cookies</option>
-						<option value="pastries">Pastries</option>
-						<option value="pies">Pies</option>
-						<option value="candies">Candies</option>
-						<option value="other">Other Desserts</option>
+						<option value="Cakes">Cakes</option>
+						<option value="Brownies">Brownies</option>
+						<option value="Cookies">Cookies</option>
+						<option value="Pastries">Pastries</option>
+						<option value="Pies">Pies</option>
+						<option value="Candies">Candies</option>
+						<option value="Other">Other Desserts</option>
 					</select>
 					{/* //description */}
 					Description

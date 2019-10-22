@@ -12,11 +12,8 @@ class Show extends Component {
 			selectedDessert: this.props.match.params.title,
 			dessert: {}
 		};
-
-		//this.setIngredients = this.setIngredients.bind(this);
 	}
 
-	//   component did mount method that finds and returns dessert by title from db
 	componentDidMount() {
 		const dessert = this.state.selectedDessert;
 		const url = 'http://localhost:3000/titles/' + dessert;
@@ -33,14 +30,12 @@ class Show extends Component {
 
 	render() {
 		if (this.state.dessert.items) {
-			console.log(this.state.dessert.items);
 			var ingredientsList = this.state.dessert.items.map(item => (
 				<li>{item}</li>
 			));
 		}
 
 		if (this.state.dessert.steps) {
-			console.log(this.state.dessert.steps);
 			var stepsList = this.state.dessert.steps.map(item => <li>{item}</li>);
 		}
 		return (

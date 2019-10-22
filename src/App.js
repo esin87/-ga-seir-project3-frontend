@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import Dashboard from './components/dashboard';
 import { Route, Switch, Link, Redirect } from 'react-router-dom';
-import New from './components/New';
+import New from './components/new.js';
 import Show from './components/Show';
 import Edit from './components/Edit';
+import Category from './components/Category';
 
 function App() {
 	return (
@@ -44,7 +45,12 @@ function App() {
 						path="/edit/:title"
 						render={routerProps => <Edit {...routerProps} />}
 					/>
-					<Redirect to="/recipes" component={Dashboard} />
+					<Route
+						exact={true}
+						path="/categories/:category"
+						render={routerProps => <Category {...routerProps} />}
+					/>
+					<Redirect to="/" component={Dashboard} />
 				</Switch>
 			</main>
 		</div>
