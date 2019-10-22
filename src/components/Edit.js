@@ -37,7 +37,7 @@ class Edit extends Component {
 		console.log(dessert);
 
 		axios
-			.put(`http://localhost:3000/${dessert.title}`, dessert)
+			.put(`http://localhost:3000/edit/${dessert.id}`, dessert)
 			.then(res => {
 				console.log(res);
 				console.log(res.data);

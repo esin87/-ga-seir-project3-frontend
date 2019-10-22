@@ -38,12 +38,17 @@ class New extends Component {
 
 		console.log(dessert);
 
-		axios.post('http://localhost:3000/', dessert).catch(err => {
+		axios.post('http://localhost:3000/create', dessert).catch(err => {
 			console.error(err);
+		});
+
+		this.props.history.push({
+			pathname: '/'
 		});
 	}
 
 	render() {
+		console.log(this.props.history.push);
 		return (
 			<div>
 				<form onSubmit={this.handleSubmit}>
