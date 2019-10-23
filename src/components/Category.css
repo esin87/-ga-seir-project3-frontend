@@ -41,7 +41,7 @@
 }
 
 .itemDiv{
-  width:500px;
+  width:400px;
   display:flex;
   justify-content: space-between;
 }

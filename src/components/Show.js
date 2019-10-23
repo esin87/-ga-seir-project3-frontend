@@ -60,7 +60,7 @@ class Show extends Component {
 		return (
 			<div className="show-container">
 				<div className="show-image-container">
-					<img src={this.state.dessert.image} alt="this dessert" />
+					<img className='showImage' src={this.state.dessert.image} alt="this dessert" />
 				</div>
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
