@@ -27,7 +27,7 @@ class Show extends Component {
 		axios
 			.get('https://d-z-desserts.herokuapp.com/titles/' + dessert)
 			.then(console.log('Updated'));
-		this.props.history.push('/edit/${this.state.dessert.title}');
+		this.props.history.push(`/edit/${this.state.dessert.title}`);
 	}
 
 	//   component did mount method that finds and returns dessert by title from db
@@ -60,7 +60,11 @@ class Show extends Component {
 		return (
 			<div className="show-container">
 				<div className="show-image-container">
-					<img className='showImage' src={this.state.dessert.image} alt="this dessert" />
+					<img
+						className="showImage"
+						src={this.state.dessert.image}
+						alt="this dessert"
+					/>
 				</div>
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
