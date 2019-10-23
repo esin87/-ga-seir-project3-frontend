@@ -1,20 +1,36 @@
 form {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
-	margin: 30px auto;
-	color: red;
-	background: rgba(0, 0, 0, .5);
+	width: 500px;
+	margin: auto;
+	background:rgb(255,240,207,.8);
+	padding:40px;
+	border-radius:3%;
+	margin-top:30px;
 }
 
 input,
 select {
 	margin: 10px 0;
-	color: red;
+	color: black;
 	
 }
 
 h2 {
 	margin-bottom: 20px;
-	background: rgba(0, 0, 0, .5);
+	text-align: center;
 }
+
+/* .newContainer{
+	background-image: url('../Project-3-Pictures/other/desk.jpg');
+	background-size:cover;
+	height:100vh;
+} */
+
+.newContainer{
+	border:1px solid black;
+	background-image:url('../Project-3-Pictures/other/baking.jpg');
+	background-size: cover;
+	height:100vh;
+}
+

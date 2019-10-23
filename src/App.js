@@ -34,24 +34,28 @@ function App() {
 			</div>
 			<main>
 				<Switch>
-					<Route path="/" exact={true} component={Dashboard} />
-					<Route path="/create" exact={true} component={New} />
-					<Route
-						exact={true}
-						path="/titles/:title"
-						render={routerProps => <Show {...routerProps} />}
-					/>
-					<Route
-						exact={true}
-						path="/edit/:title"
-						render={routerProps => <Edit {...routerProps} />}
-					/>
-					<Route
-						exact={true}
-						path="/categories/:category"
-						render={routerProps => <Category {...routerProps} />}
-					/>
-					<Redirect to="/" component={Dashboard} />
+					<div>
+						<div className='appMain'>
+							<Route path="/" exact={true} component={Dashboard} />
+						</div>
+						<Route path="/create" exact={true} component={New} />
+						<Route
+							exact={true}
+							path="/titles/:title"
+							render={routerProps => <Show {...routerProps} />}
+						/>
+						<Route
+							exact={true}
+							path="/edit/:title"
+							render={routerProps => <Edit {...routerProps} />}
+						/>
+						<Route
+							exact={true}
+							path="/categories/:category"
+							render={routerProps => <Category {...routerProps} />}
+						/>
+						<Redirect to="/" component={Dashboard} />
+					</div>
 				</Switch>
 			</main>
 		</div>

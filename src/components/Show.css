@@ -1,26 +1,37 @@
-/* img {
+img {
   width: 20%;
-} */
-
-.showContainer {
-  border: 1px solid black;
-  color: whitesmoke;
-  
 }
-
-.cookieBox {
+.show-container {
+	background-image:url('../Project-3-Pictures/other/showBackG.jpg');
+  background-size: cover;
+}
+.show-image-container{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+	flex-direction: column;
+  margin: auto;
+  padding:40px;
+	margin-top:30px;
+}
+.show-text-container{
+  color: black;
+  display: flex;
+	flex-direction: column;
+  margin: auto;
+  padding:40px;
+  border-style: dashed;
+  border-color: slateblue;
+	border-radius:3%;
+	margin-top:30px;
 }
 .smallText {
   font-size: 0.5em;
   color: black;
   background: yellow;
 }
-.areYouSure{
-  color:black;
-}
 .edit{
-  color: whitesmoke;
+  color: black;
+  align: left;
+}
+.areYouSure{
+  color: red;
 }
