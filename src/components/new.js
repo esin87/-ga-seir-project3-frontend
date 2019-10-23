@@ -36,7 +36,7 @@ class New extends Component {
 			image: this.state.image
 		};
 
-		axios.post('http://localhost:3000/create', dessert).catch(err => {
+		axios.post('https://d-z-desserts.herokuapp.com/create', dessert).catch(err => {
 			console.error(err);
 		});
 

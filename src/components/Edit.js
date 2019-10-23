@@ -21,7 +21,7 @@ class Edit extends Component {
 	const dessert = this.state;
 	
     axios
-	  .put('http://localhost:3000/edit/' + 
+	  .put('https://d-z-desserts.herokuapp.com/edit/' + 
 	  this.state._id, dessert)
       .then(res => {
       })
@@ -33,7 +33,7 @@ class Edit extends Component {
   //   component did mount method that finds and returns dessert by title from db
   componentDidMount() {
     console.log('component mounted');
-	const url = 'http://localhost:3000/titles/' + 
+	const url = 'https://d-z-desserts.herokuapp.com/titles/' + 
 	this.props.match.params.title;
 
     axios

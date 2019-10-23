@@ -14,7 +14,10 @@ class Category extends Component {
 
 	componentDidMount() {
 		axios
-			.get('http://localhost:3000/categories/' + this.state.category)
+			.get(
+				'https://d-z-desserts.herokuapp.com/categories/' +
+					this.state.category
+			)
 			.then(response => {
 				this.setState({
 					desserts: response.data
@@ -36,23 +39,20 @@ class Category extends Component {
 				</li>
 			);
 		});
-			return (
-				<div className='outsideCategory'>
-					<div className='insideCategory'>
-						<div className='innerCategory'>
-							<h1>{this.state.category}</h1>
-							<ul>
-								<li>
-									<div className='itemDiv'>
-										{list}
-									</div>
-								</li>
-							</ul>
-						</div>
-						
+		return (
+			<div className="outsideCategory">
+				<div className="insideCategory">
+					<div className="innerCategory">
+						<h1>{this.state.category}</h1>
+						<ul>
+							<li>
+								<div className="itemDiv">{list}</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-			);
+			</div>
+		);
 	}
 }
 
