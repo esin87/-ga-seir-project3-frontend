@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ga-seir-project3-frontend/static/css/main.9e544327.chunk.css",
+    "main.js": "/ga-seir-project3-frontend/static/js/main.1ed12779.chunk.js",
+    "main.js.map": "/ga-seir-project3-frontend/static/js/main.1ed12779.chunk.js.map",
+    "runtime-main.js": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js",
+    "runtime-main.js.map": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js.map",
+    "static/js/2.067118df.chunk.js": "/ga-seir-project3-frontend/static/js/2.067118df.chunk.js",
+    "static/js/2.067118df.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.067118df.chunk.js.map",
+    "index.html": "/ga-seir-project3-frontend/index.html",
+    "precache-manifest.39a7938df6870042281289d3a40bd730.js": "/ga-seir-project3-frontend/precache-manifest.39a7938df6870042281289d3a40bd730.js",
+    "service-worker.js": "/ga-seir-project3-frontend/service-worker.js",
+    "static/css/main.9e544327.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.9e544327.chunk.css.map",
+    "static/media/applepie.png": "/ga-seir-project3-frontend/static/media/applepie.66b48c23.png",
+    "static/media/New.css": "/ga-seir-project3-frontend/static/media/baking.ea9a3a21.jpg",
+    "static/media/brownie.png": "/ga-seir-project3-frontend/static/media/brownie.6ade738f.png",
+    "static/media/Category.css": "/ga-seir-project3-frontend/static/media/category.78f6db5d.png",
+    "static/media/chocolatechip.png": "/ga-seir-project3-frontend/static/media/chocolatechip.7a897d31.png",
+    "static/media/donuts.png": "/ga-seir-project3-frontend/static/media/donuts.1b750ef2.png",
+    "static/media/kitkat.png": "/ga-seir-project3-frontend/static/media/kitkat.db4c1610.png",
+    "static/media/other.png": "/ga-seir-project3-frontend/static/media/other.e03ce322.png",
+    "static/media/Show.css": "/ga-seir-project3-frontend/static/media/showBackG.3d333e56.jpg",
+    "static/media/App.css": "/ga-seir-project3-frontend/static/media/table2.d63f5577.jpg",
+    "static/media/tiramisu.png": "/ga-seir-project3-frontend/static/media/tiramisu.0f34ea8b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a895922.js",
+    "static/js/2.067118df.chunk.js",
+    "static/css/main.9e544327.chunk.css",
+    "static/js/main.1ed12779.chunk.js"
+  ]
+}
