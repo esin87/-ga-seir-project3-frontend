@@ -22,28 +22,42 @@ class Dashboard extends Component {
 
 	render() {
 		return (
-			<div>
-				<Link to="/categories/Cookies">
-					<Cookies />
-				</Link>
-				<Link to="/categories/Cakes">
-					<Cakes />
-				</Link>
-				<Link to="/categories/Candies">
-					<Candies />
-				</Link>
-				<Link to="/categories/Pastries">
-					<Pastries />
-				</Link>
-				<Link to="/categories/Pies">
-					<Pies />
-				</Link>
-				<Link to="/categories/Brownies">
-					<Brownies />
-				</Link>
-				<Link to="/categories/Other">
-					<Other />
-				</Link>
+			<div className='dashContainer'>
+				<div className='cookie'>
+					<Link to="/categories/Cookies">
+						<Cookies className='test' />
+					</Link>
+				</div>
+				<div className='cake'>
+					<Link to="/categories/Cakes">
+						<Cakes />
+					</Link>
+				</div>
+				<div className='candies'>
+					<Link to="/categories/Candies">
+						<Candies />
+					</Link>
+				</div>
+				<div className='pastries'>
+					<Link to="/categories/Pastries">
+						<Pastries />
+					</Link>
+				</div>
+				<div className='pies'>
+					<Link to="/categories/Pies">
+						<Pies />
+					</Link>
+				</div>
+				<div className='brownies'>
+					<Link to="/categories/Brownies">
+						<Brownies />
+					</Link>
+				</div>
+				<div className='other'>
+					<Link to="/categories/Other">
+						<Other />
+					</Link>
+				</div>
 			</div>
 		);
 	}
