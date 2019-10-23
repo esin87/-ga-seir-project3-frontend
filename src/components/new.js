@@ -47,7 +47,7 @@ class New extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='newContainer'>
 				<form onSubmit={this.handleSubmit}>
 					<h2>Create New Recipe</h2>
 					{/* //title */}
