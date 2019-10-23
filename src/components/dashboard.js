@@ -11,7 +11,7 @@ import Pies from './Pies';
 import Other from './Others';
 import Brownies from './Brownies';
 //import Category from './Category';
-
+//this is the correct file
 class Dashboard extends Component {
 	constructor() {
 		super();
@@ -22,38 +22,38 @@ class Dashboard extends Component {
 
 	render() {
 		return (
-			<div className='dashContainer'>
-				<div className='cookie'>
+			<div className="dashContainer">
+				<div className="cookie">
 					<Link to="/categories/Cookies">
-						<Cookies className='test' />
+						<Cookies className="test" />
 					</Link>
 				</div>
-				<div className='cake'>
+				<div className="cake">
 					<Link to="/categories/Cakes">
 						<Cakes />
 					</Link>
 				</div>
-				<div className='candies'>
+				<div className="candies">
 					<Link to="/categories/Candies">
 						<Candies />
 					</Link>
 				</div>
-				<div className='pastries'>
+				<div className="pastries">
 					<Link to="/categories/Pastries">
 						<Pastries />
 					</Link>
 				</div>
-				<div className='pies'>
+				<div className="pies">
 					<Link to="/categories/Pies">
 						<Pies />
 					</Link>
 				</div>
-				<div className='brownies'>
+				<div className="brownies">
 					<Link to="/categories/Brownies">
 						<Brownies />
 					</Link>
 				</div>
-				<div className='other'>
+				<div className="other">
 					<Link to="/categories/Other">
 						<Other />
 					</Link>
