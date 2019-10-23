@@ -76,9 +76,7 @@ class Show extends Component {
 				<section className="smallText">
 					Click Edit to save your changes.
 				</section>
-				<Link
-					onTouchCancelCapture={`/edit/${this.state.dessert.title}`}
-					className="edit">
+				<Link to={`/edit/${this.state.dessert.title}`} className="edit">
 					Edit
 				</Link>
 				<></>
