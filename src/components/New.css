@@ -3,11 +3,13 @@ form {
 	flex-direction: column;
 	width: 300px;
 	margin: 30px auto;
+	color: red;
 }
 
 input,
 select {
 	margin: 10px 0;
+	color: red;
 }
 
 h2 {

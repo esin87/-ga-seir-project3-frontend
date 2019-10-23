@@ -3,127 +3,120 @@ import axios from 'axios';
 import './New.css';
 
 class Edit extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-		this.handleSubmit = this.handleSubmit.bind(this);
-		this.handleChange = this.handleChange.bind(this);
-	}
+  handleChange(evt) {
+    this.setState({
+      [evt.target.name]: evt.target.value
+    });
+  }
 
-	handleChange(evt) {
-		this.setState({
-			[evt.target.name]: evt.target.value
-		});
-	}
+  handleSubmit(evt) {
+    evt.preventDefault();
+	const dessert = this.state;
+	
+    axios
+	  .put('http://localhost:3000/edit/' + 
+	  this.state._id, dessert)
+      .then(res => {
+      })
+      .catch(err => {
+        console.error(err);});
+    this.props.history.push('/');
+  }
 
-	handleSubmit(evt) {
-		evt.preventDefault();
+  //   component did mount method that finds and returns dessert by title from db
+  componentDidMount() {
+    console.log('component mounted');
+	const url = 'http://localhost:3000/titles/' + 
+	this.props.match.params.title;
 
-		const dessert = this.state;
+    axios
+      .get(url)
+      .then(response => {
+        console.log(response.data);
+        this.setState(response.data);
+      })
+      .then(response => {
+        console.log(this.state);
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }
 
-		console.log(dessert);
-		console.log(this.state._id);
-
-		axios
-			.put('http://localhost:3000/edit/' + this.state._id, dessert)
-			.then(res => {
-				console.log(res);
-				console.log(res.data);
-			})
-			.catch(err => {
-				console.error(err);
-			});
-
-		this.props.history.push('/');
-	}
-
-	//   component did mount method that finds and returns dessert by title from db
-	componentDidMount() {
-		console.log('component mounted');
-		const url =
-			'http://localhost:3000/titles/' + this.props.match.params.title;
-
-		axios
-			.get(url)
-			.then(response => {
-				console.log(response.data);
-				this.setState(response.data);
-			})
-			.then(response => {
-				console.log(this.state);
-			})
-			.catch(err => {
-				console.error(err);
-			});
-	}
-
-	render() {
-		return (
-			<div>
-				<form onSubmit={this.handleSubmit}>
-					<h2>Edit Recipe</h2>
-					{/* //title */}
-					Title
-					<input
-						name="title"
-						type="text"
-						value={this.state.title}
-						onChange={this.handleChange}
-					/>
-					{/* //category */}
-					Category
-					<select
-						name="category"
-						onChange={this.handleChange}
-						value={this.state.category}>
-						<option value="Cakes">Cakes</option>
-						<option value="Brownies">Brownies</option>
-						<option value="Cookies">Cookies</option>
-						<option value="Pastries">Pastries</option>
-						<option value="Pies">Pies</option>
-						<option value="Candies">Candies</option>
-						<option value="Other">Other Desserts</option>
-					</select>
-					{/* //description */}
-					Description
-					<input
-						name="description"
-						type="text"
-						value={this.state.description}
-						onChange={this.handleChange}
-					/>
-					{/* //items */}
-					Items
-					<textarea
-						rows="5"
-						name="items"
-						type="text"
-						value={this.state.items}
-						onChange={this.handleChange}
-					/>
-					{/* //steps */}
-					Steps
-					<textarea
-						rows="14"
-						name="steps"
-						type="text"
-						value={this.state.steps}
-						onChange={this.handleChange}
-					/>
-					{/* //image */}
-					Image URL
-					<input
-						name="image"
-						type="text"
-						value={this.state.image}
-						onChange={this.handleChange}
-					/>
-					<input type="submit" value="Update" />
-				</form>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <h2>Edit Recipe</h2>
+          {/* //title */}
+          Title
+          <input
+            name="title"
+            type="text"
+            value={this.state.title}
+            onChange={this.handleChange}
+          />
+          {/* //category */}
+          Category
+          <select
+            name="category"
+            onChange={this.handleChange}
+            value={this.state.category}
+          >
+            <option value="Cakes">Cakes</option>
+            <option value="Brownies">Brownies</option>
+            <option value="Cookies">Cookies</option>
+            <option value="Pastries">Pastries</option>
+            <option value="Pies">Pies</option>
+            <option value="Candies">Candies</option>
+            <option value="Other">Other Desserts</option>
+          </select>
+          {/* //description */}
+          Description
+          <input
+            name="description"
+            type="text"
+            value={this.state.description}
+            onChange={this.handleChange}
+          />
+          {/* //items */}
+          Items
+          <textarea
+            rows="5"
+            name="items"
+            type="text"
+            value={this.state.items}
+            onChange={this.handleChange}
+          />
+          {/* //steps */}
+          Steps
+          <textarea
+            rows="14"
+            name="steps"
+            type="text"
+            value={this.state.steps}
+            onChange={this.handleChange}
+          />
+          {/* //image */}
+          Image URL
+          <input
+            name="image"
+            type="text"
+            value={this.state.image}
+            onChange={this.handleChange}
+          />
+          <input type="submit" value="Update" />
+        </form>
+      </div>
+    );
+  }
 }
 
 export default Edit;
