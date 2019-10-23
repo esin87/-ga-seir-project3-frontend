@@ -1,0 +1,26 @@
+/* img {
+  width: 20%;
+} */
+
+.showContainer {
+  border: 1px solid black;
+  color: whitesmoke;
+  
+}
+
+.cookieBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.smallText {
+  font-size: 0.5em;
+  color: black;
+  background: yellow;
+}
+.areYouSure{
+  color:black;
+}
+.edit{
+  color:black;
+}

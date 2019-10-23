@@ -3,20 +3,19 @@
   list-style: none;
   margin:0;
   padding:0;
+  color:whitesmoke;
+  text-decoration: none;
 }
 
 /* NAV */
 
-nav ul li a{
-  text-decoration: none;
-}
-
 nav ul li{
   display:inline-block;
   margin: 0 10px;
+  
 }
 
-
+/* page title */
 .logo{
   float:left;
   font-size:30px;
@@ -37,7 +36,7 @@ nav{
 }
 
 .navLinks:hover{
-  color:white;
+  color:whitesmoke;
 }
 
 
@@ -56,4 +55,5 @@ main{
   background-image:url('./Project-3-Pictures/table/table2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  
 }

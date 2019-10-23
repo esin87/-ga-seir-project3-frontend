@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 //what is the below code for?
 import { promised } from 'q';
 import { Link } from 'react-router-dom';
@@ -10,6 +9,8 @@ import Candies from './Candies';
 import Pastries from './Pastries';
 import Pies from './Pies';
 import Other from './Others';
+import Brownies from './Brownies';
+//import Category from './Category';
 
 class Dashboard extends Component {
 	constructor() {
@@ -19,36 +20,44 @@ class Dashboard extends Component {
 		};
 	}
 
-	componentDidMount() {
-		axios
-			.get('http://localhost:3000')
-			.then(response => {
-				this.setState({
-					desserts: response.data
-				});
-			})
-			.catch(err => {
-				console.log(err);
-			});
-	}
-
 	render() {
-		let list = this.state.desserts.map(item => {
-			return (
-				<Link to={`/titles/${item.title}`} key={item.title}>
-					<li>{item.title}</li>
-				</Link>
-			);
-		});
 		return (
-			// <ul>{list}</ul>
-			<div>
-				<Cookies />
-				<Cakes />
-				<Candies/>
-				<Pastries/>
-				<Pies/>
-				<Other/>
+			<div className='dashContainer'>
+				<div className='cookie'>
+					<Link to="/categories/Cookies">
+						<Cookies className='test' />
+					</Link>
+				</div>
+				<div className='cake'>
+					<Link to="/categories/Cakes">
+						<Cakes />
+					</Link>
+				</div>
+				<div className='candies'>
+					<Link to="/categories/Candies">
+						<Candies />
+					</Link>
+				</div>
+				<div className='pastries'>
+					<Link to="/categories/Pastries">
+						<Pastries />
+					</Link>
+				</div>
+				<div className='pies'>
+					<Link to="/categories/Pies">
+						<Pies />
+					</Link>
+				</div>
+				<div className='brownies'>
+					<Link to="/categories/Brownies">
+						<Brownies />
+					</Link>
+				</div>
+				<div className='other'>
+					<Link to="/categories/Other">
+						<Other />
+					</Link>
+				</div>
 			</div>
 		);
 	}
