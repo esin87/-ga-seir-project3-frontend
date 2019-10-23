@@ -4,6 +4,7 @@ form {
 	width: 300px;
 	margin: 30px auto;
 	color: red;
+	background: rgba(0, 0, 0, .5);
 }
 
 input,
