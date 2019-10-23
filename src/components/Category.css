@@ -14,7 +14,7 @@
 
 .insideCategory ul li{
   margin:15px;
-  font-size:18px;
+  font-size:15px;
   font-weight: bold;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .insideCategory{
-  margin:0 300px;
+  margin:0 200px;
   padding-top:40px;
 }
 
@@ -38,4 +38,10 @@
   background:rgb(255,255,255,.9);
   border-radius:3%;
   padding:10px;
+}
+
+.itemDiv{
+  width:500px;
+  display:flex;
+  justify-content: space-between;
 }
