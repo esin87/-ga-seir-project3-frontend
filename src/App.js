@@ -7,6 +7,7 @@ import Show from './components/Show';
 import Edit from './components/Edit';
 import Category from './components/Category';
 
+//ready to deploy
 
 function App() {
 	return (
@@ -35,7 +36,7 @@ function App() {
 			<main>
 				<Switch>
 					<div>
-						<div className='appMain'>
+						<div className="appMain">
 							<Route path="/" exact={true} component={Dashboard} />
 						</div>
 						<Route path="/create" exact={true} component={New} />
