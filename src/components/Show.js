@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Show.css';
-import { Link } from 'react-router-dom';
 
 class Show extends Component {
 	constructor(props) {
@@ -47,15 +46,15 @@ class Show extends Component {
 
 	render() {
 		if (this.state.dessert.items) {
-			console.log(this.state.dessert.items);
-			var ingredientsList = this.state.dessert.items.map(item => (
-				<li>{item}</li>
+			var ingredientsList = this.state.dessert.items.map((item, index) => (
+				<li key={index}>{item}</li>
 			));
 		}
 
 		if (this.state.dessert.steps) {
-			console.log(this.state.dessert.steps);
-			var stepsList = this.state.dessert.steps.map(item => <li>{item}</li>);
+			var stepsList = this.state.dessert.steps.map((item, index) => (
+				<li key={index}>{item}</li>
+			));
 		}
 		return (
 			<div className="show-container">
