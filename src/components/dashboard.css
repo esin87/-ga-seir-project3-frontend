@@ -14,7 +14,8 @@
 .cake{
   grid-column:5;
   grid-row:5;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  margin-right:30px;
 }
 
 .candies{
