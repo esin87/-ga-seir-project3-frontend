@@ -48,7 +48,6 @@ class New extends Component {
     }
 
     render() {
-        console.log(this.props.history.push);
         return ( <
             div >
             <

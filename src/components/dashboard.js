@@ -40,9 +40,9 @@ class Dashboard extends Component {
 				</Link>
 			);
 		});
-		return(
+		return (
 			// <ul>{list}</ul>
-			<div className='dasshboardContainer'>
+			<div>
 				<Cookies />
 				<Cakes />
 				<Candies/>
@@ -50,7 +50,7 @@ class Dashboard extends Component {
 				<Pies/>
 				<Other/>
 			</div>
-    ) 
+		);
 	}
 }
 
