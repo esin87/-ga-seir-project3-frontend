@@ -54,7 +54,11 @@ nav{
   background-image:url('./Project-3-Pictures/table/table2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  max-width:1526px;
+  width:1526px;
 }
+
+@media screen and (max-width:)
 
 
 
