@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Category.css';
 
 class Category extends Component {
 	constructor(props) {
@@ -35,12 +36,21 @@ class Category extends Component {
 				</li>
 			);
 		});
-		return (
-			<div>
-				<h1>{this.state.category}</h1>
-				<ul>{list}</ul>
-			</div>
-		);
+			return (
+				<div className='outsideCategory'>
+					<div className='insideCategory'>
+						<div className='innerCategory'>
+							<h1>{this.state.category}</h1>
+							<ul>
+								<li>
+									{list}
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			);
 	}
 }
 
