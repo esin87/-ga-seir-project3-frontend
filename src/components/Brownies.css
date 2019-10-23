@@ -8,7 +8,9 @@
 @media screen and (max-height:800px){
   .browniePic{
     width:20%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:60px;
+  }
+  .brownieWord{
+    margin-left:60px;
   }
 }

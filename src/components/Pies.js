@@ -7,7 +7,7 @@ class Pies extends Component{
     return(
       <div>
         <img className='piePic' src={require('../Project-3-Pictures/pies/applepie.png')} alt='apple pie'></img>
-        <h3>Pies</h3>
+        <h3 className='pieWord'>Pies</h3>
       </div>
     )
   }
