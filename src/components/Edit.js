@@ -52,7 +52,7 @@ class Edit extends Component {
 
   render() {
     return (
-      <div>
+      <div className='newContainer'>
         <form onSubmit={this.handleSubmit}>
           <h2>Edit Recipe</h2>
           {/* //title */}
