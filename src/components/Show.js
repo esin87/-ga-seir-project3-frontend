@@ -75,10 +75,10 @@ class Show extends Component {
 					<p>{this.state.dessert.description}</p>
 					<br></br>
 					<h5>Ingredients: </h5>
-					<ul>{this.state.dessert.items && ingredientsList}</ul>
+					<ul className="IngList">{this.state.dessert.items && ingredientsList}</ul>
 					<br></br>
 					<h5>Steps to make this dessert: </h5>
-					<ul>{this.state.dessert.steps && stepsList}</ul>
+					<ul className="makeIt">{this.state.dessert.steps && stepsList}</ul>
 				</div>
 				<section className="smallText">
 					Click Edit to save your changes.
