@@ -10,7 +10,6 @@ img {
 	flex-direction: column;
   margin: auto;
   padding:40px;
-	margin-top:30px;
 }
 .show-text-container{
   color: black;
@@ -29,9 +28,11 @@ img {
   background: yellow;
 }
 .edit{
+  padding:10px;
   color: black;
   align: left;
 }
 .areYouSure{
+  padding:10px;
   color: red;
 }
