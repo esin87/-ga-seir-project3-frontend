@@ -76,11 +76,11 @@ class Show extends Component {
 				<section className="smallText">
 					Click Edit to save your changes.
 				</section>
-				<button
-					onClick={`/edit/${this.state.dessert.title}`}
+				<Link
+					onTouchCancelCapture={`/edit/${this.state.dessert.title}`}
 					className="edit">
 					Edit
-				</button>
+				</Link>
 				<></>
 				<section className="smallText">
 					No take backs. This deletes for real.
