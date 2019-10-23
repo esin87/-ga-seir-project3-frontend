@@ -4,7 +4,7 @@ import './Cakes.css'
 class Cakes extends Component {
 	render() {
 		return (
-			<div>
+			<div className='cakeContainer'>
 				<img className='cakePic'
 					src={require('../Project-3-Pictures/cakes/tiramisu.png')}
 					alt="cakes"></img>
