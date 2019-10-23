@@ -1,13 +1,13 @@
-.browniePic{
-  width:30%;
+.pastryPic{
+  width:50%;
   margin-left:auto;
   margin-right:auto;
 }
 
 
 @media screen and (max-height:800px){
-  .browniePic{
-    width:20%;
+  .pastryPic{
+    width:30%;
     margin-left:auto;
     margin-right:auto;
   }

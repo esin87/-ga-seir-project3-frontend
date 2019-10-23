@@ -51,3 +51,34 @@
   grid-row:4/5;
   margin-right:50px;
 }
+
+@media screen and (max-height:850px){
+  .other{
+    margin-top:120px;
+  }
+  .cake{
+    margin-bottom:70px;
+  }
+  .pies{
+    margin-top:20px;
+  }
+}
+
+@media screen and (max-height:860px){
+  .other{
+    margin-top:120px;
+  }
+  .cake{
+    margin-bottom:50px;
+  }
+  .pies{
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-height:800px){
+  .dashContainer{
+    display:flex;
+    flex-direction: column;
+  }
+}

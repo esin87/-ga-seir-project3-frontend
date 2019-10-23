@@ -1,13 +1,12 @@
-.browniePic{
-  width:30%;
+.piePic{
+  width:50%;
   margin-left:auto;
   margin-right:auto;
 }
 
-
 @media screen and (max-height:800px){
-  .browniePic{
-    width:20%;
+  .piePic{
+    width:30%;
     margin-left:auto;
     margin-right:auto;
   }
