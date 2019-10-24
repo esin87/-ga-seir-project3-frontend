@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Show.css';
+import { trackPromise } from 'react-promise-tracker';
 
 class Show extends Component {
 	constructor(props) {
@@ -12,11 +13,12 @@ class Show extends Component {
 			dessert: {}
 		};
 	}
-	// Adding Delete 
+
+	// Adding Delete
 	delete() {
 		axios
-			.delete(`https://d-z-desserts.herokuapp.com/${this.state.dessert._id}` )
-			.then(console.log('Goodbye'+ `${this.state.dessert._id}` ));
+			.delete(`https://d-z-desserts.herokuapp.com/${this.state.dessert._id}`)
+			.then(console.log('Goodbye' + `${this.state.dessert._id}`));
 		this.props.history.push('/');
 	}
 	// Adding Edit
@@ -33,14 +35,16 @@ class Show extends Component {
 		const dessert = this.state.selectedDessert;
 		const url = 'https://d-z-desserts.herokuapp.com/titles/' + dessert;
 
-		axios
-			.get(url)
-			.then(response => {
-				this.setState({ dessert: response.data });
-			})
-			.catch(err => {
-				console.error(err);
-			});
+		trackPromise(
+			axios
+				.get(url)
+				.then(response => {
+					this.setState({ dessert: response.data });
+				})
+				.catch(err => {
+					console.error(err);
+				})
+		);
 	}
 
 	render() {

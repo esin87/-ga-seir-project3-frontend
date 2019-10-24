@@ -63,7 +63,7 @@ class New extends Component {
 			});
 
 		this.props.history.push({
-			pathname: '/'
+			pathname: `/titles/${dessert.title}`
 		});
 	}
 
