@@ -15,6 +15,15 @@ export default class TeamAbout extends Component {
 						We made it: Brian, Eleni, Esin, and Vincent .
 					</h2>{' '}
 				</header>{' '}
+				<section>
+					<h3 className='top'> Why this team name and page name?</h3>
+					<p className='top'>
+						Our professor for this project is Kenneth (Kenny) Cruz. We were
+						trying to be clever with something like Kenn'y G-Suite or Kenny
+						Rogers Roasted Coders, but this combo had us the most entertained and
+						happy. <a href="http://knnyczr.com/" target="_blank" rel='noopener noreferrer'>Click for KNNYCZR's site</a>
+					</p>
+				</section>
 				<h4 className='post-link'>
 					<a
 						href='http://www.shakesville.com/2008/11/happy-birthday-deeky.html'
@@ -87,13 +96,18 @@ export default class TeamAbout extends Component {
 					</p>
 					<h3 className='who'> Vincent Chen</h3>
 					<p className='vincent'>
-						I really enjoy the front end side of developing but I am always looking to learn and incorporate new things. My portfolio is a work in progress but feel free to check it out:{' '}
-						<a href='https://vbc221.github.io/Vincent-Portfolio-Choice/' target='_blank' rel='noopener noreferrer'>
+						I really enjoy the front end side of developing but I am always
+						looking to learn and incorporate new things. My portfolio is a work
+						in progress but feel free to check it out:{' '}
+						<a
+							href='https://vbc221.github.io/Vincent-Portfolio-Choice/'
+							target='_blank'
+							rel='noopener noreferrer'>
 							My portfolio.
 						</a>
 					</p>
 				</section>
-                <h1 className="foot-team">Thanks for visiting our site!</h1>
+				<h1 className='foot-team'>Thanks for visiting our site!</h1>
 			</div>
 		);
 	}
