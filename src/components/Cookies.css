@@ -11,7 +11,7 @@ img{
 }
 
 .cookieImage:hover{
-  background:linear-gradient(to right top, #fdf6c8, #faedc0, #f7e4b9, #f3dbb2, #efd2ac);
+  background:rgb(255,229,180,.8);
   border-radius:50%;
 }
 
