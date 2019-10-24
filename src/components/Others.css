@@ -4,8 +4,33 @@
   margin-right:auto;
 }
 
+.otherPic:hover{
+  background:linear-gradient(to right top, #fdf6c8, #faedc0, #f7e4b9, #f3dbb2, #efd2ac);
+  border-radius:50%;
+}
+
 
 @media screen and (max-height:760px){
+  .otherPic{
+    width:20%;
+    margin-left:200px;
+  }
+  .otherWord{
+    margin-left:200px;
+  }
+}
+
+@media screen and (max-width:736px){
+  .otherPic{
+    width:20%;
+    margin-left:200px;
+  }
+  .otherWord{
+    margin-left:200px;
+  }
+}
+
+@media screen and (max-width:667px){
   .otherPic{
     width:20%;
     margin-left:200px;
