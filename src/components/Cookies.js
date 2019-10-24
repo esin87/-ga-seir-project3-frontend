@@ -6,7 +6,7 @@ class Cookies extends Component{
     return(
       <div className='cookieBox'>
         <img className='cookieImage' src={require('../Project-3-Pictures/cookies/chocolatechip.png')} alt='cookies'></img>
-        <h3>Cookies</h3>
+        <h3 className='cookieWord'>Cookies</h3>
         
       </div>
     )
