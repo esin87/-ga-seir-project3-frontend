@@ -117,7 +117,7 @@ export default class TeamAbout extends Component {
           </p>
           <h3 className="who"> Vincent Chen</h3>
           <p className="vincent">
-            I really enjoy the front end side of developing but I am always
+            I am a fullstack developer with a passion for front end side of developing but I am always
             looking to learn and incorporate new things. My portfolio is a work
             in progress but feel free to check it out:{' '}
             <a
