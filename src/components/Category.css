@@ -9,7 +9,7 @@
 
 .insideCategory ul{
   text-align: center;
-  margin-top:20px;
+  margin-top:0px;
 }
 
 .insideCategory ul li{
@@ -24,7 +24,7 @@
 
 .insideCategory{
   margin:0 200px;
-  padding-top:40px;
+  padding-top:80px;
 }
 
 .outsideCategory{
@@ -35,7 +35,7 @@
 }
 
 .innerCategory{
-  background:rgb(255,255,255,.9);
+  background:rgb(255,255,255,1);
   border-radius:3%;
   padding:10px;
 }
