@@ -9,7 +9,6 @@ import Category from './components/Category';
 import TeamAbout from './components/TeamAbout';
 
 function App() {
-
 	return (
 		<div>
 			<div className="navBox">
@@ -37,23 +36,35 @@ function App() {
 				<Switch>
 					<div>
 						<div className="appMain">
-							<Route path="/" exact={true} component={Dashboard} />{' '}
+							<Route
+								path={process.env.PUBLIC_URL + '/'}
+								exact={true}
+								component={Dashboard}
+							/>{' '}
 						</div>{' '}
-						<Route exact={true} path="/about" component={TeamAbout} />{' '}
-						<Route path="/create" exact={true} component={New} />{' '}
 						<Route
 							exact={true}
-							path="/titles/:title"
+							path={process.env.PUBLIC_URL + '/about'}
+							component={TeamAbout}
+						/>{' '}
+						<Route
+							path={process.env.PUBLIC_URL + '/create'}
+							exact={true}
+							component={New}
+						/>{' '}
+						<Route
+							exact={true}
+							path={process.env.PUBLIC_URL + '/titles/:title'}
 							render={routerProps => <Show {...routerProps} />}
 						/>
 						<Route
 							exact={true}
-							path="/edit/:title"
+							path={process.env.PUBLIC_URL + '/edit/:title'}
 							render={routerProps => <Edit {...routerProps} />}
 						/>
 						<Route
 							exact={true}
-							path="/categories/:category"
+							path={process.env.PUBLIC_URL + '/categories/:category'}
 							render={routerProps => <Category {...routerProps} />}
 						/>
 					</div>{' '}
