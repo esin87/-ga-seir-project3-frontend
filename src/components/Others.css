@@ -14,3 +14,23 @@
     margin-left:200px;
   }
 }
+
+@media screen and (max-width:736px){
+  .otherPic{
+    width:20%;
+    margin-left:200px;
+  }
+  .otherWord{
+    margin-left:200px;
+  }
+}
+
+@media screen and (max-width:667px){
+  .otherPic{
+    width:20%;
+    margin-left:200px;
+  }
+  .otherWord{
+    margin-left:200px;
+  }
+}

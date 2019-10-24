@@ -14,3 +14,23 @@
     margin-right:13px;
   }
 }
+
+@media screen and (max-width:736px){
+  .pastryPic{
+    width:25%;
+    margin-right:20px;
+  }
+  .pastryWord{
+    margin-right:13px;
+  }
+}
+
+@media screen and (max-width:667px){
+  .pastryPic{
+    width:25%;
+    margin-right:20px;
+  }
+  .pastryWord{
+    margin-right:13px;
+  }
+}

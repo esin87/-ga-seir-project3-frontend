@@ -16,3 +16,23 @@
 
 }
 
+
+@media screen and (max-width:736px){
+  .cakePic{
+    width:30%;
+    margin-left:70px;
+  }
+  .cakeWord{
+    margin-left:50px;
+  }
+}
+
+@media screen and (max-width:667px){
+  .cakePic{
+    width:30%;
+    margin-left:70px;
+  }
+  .cakeWord{
+    margin-left:50px;
+  }
+}

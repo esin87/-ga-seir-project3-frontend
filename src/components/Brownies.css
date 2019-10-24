@@ -15,3 +15,22 @@
   }
 }
 
+@media screen and (max-width:736px){
+  .browniePic{
+    width:20%;
+    margin-left:80px;
+  }
+  .brownieWord{
+    margin-left:80px;
+  }
+}
+
+@media screen and (max-width:667px){
+  .browniePic{
+    width:20%;
+    margin-left:80px;
+  }
+  .brownieWord{
+    margin-left:80px;
+  }
+}
