@@ -20,11 +20,6 @@ h2 {
 	text-align: center;
 }
 
-/* .newContainer{
-	background-image: url('../Project-3-Pictures/other/desk.jpg');
-	background-size:cover;
-	height:100vh;
-} */
 
 .newContainer {
 	border: 1px solid black;
@@ -35,4 +30,11 @@ h2 {
 
 .error {
 	border: 1px solid red;
+}
+
+@media screen and (max-width:667px){
+  form{
+		width:350px;
+
+	}
 }

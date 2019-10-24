@@ -22,8 +22,8 @@
 
 @media screen and (max-width:736px){
   .otherPic{
-    width:20%;
-    margin-left:200px;
+    width:25%;
+    margin-left:250px;
   }
   .otherWord{
     margin-left:200px;
@@ -33,9 +33,9 @@
 @media screen and (max-width:667px){
   .otherPic{
     width:20%;
-    margin-left:200px;
+    margin-left:195px;
   }
   .otherWord{
-    margin-left:200px;
+    margin-left:190px;
   }
 }

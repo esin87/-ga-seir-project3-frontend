@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-height:760px){
+@media screen and (max-width:760px){
   .dashContainer{
     display:flex;
     flex-direction: column;

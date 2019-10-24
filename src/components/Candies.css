@@ -6,7 +6,7 @@
 
 .candyPic:hover{
   background:linear-gradient(to right top, #fdf6c8, #faedc0, #f7e4b9, #f3dbb2, #efd2ac);
-  border-radius:50%;
+  border-radius:40%;
 }
 
 
@@ -34,7 +34,7 @@
 
 @media screen and (max-width:667px){
   .candyPic{
-    width:40%;
+    width:50%;
     margin-left:auto;
     margin-right:auto;
   }
