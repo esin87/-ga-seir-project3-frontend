@@ -4,13 +4,19 @@
   margin-right:auto;
 }
 
-@media screen and (max-height:800px){
+@media screen and (max-height:768px){
   .piePic{
     width:30%;
     margin-left:20px;
     background:
   }
   .pieWord{
+    margin-left:20px;
+  }
+}
+
+@media screen and (max-height:800px){
+  .piePic{
     margin-left:20px;
   }
 }

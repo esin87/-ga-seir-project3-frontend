@@ -76,9 +76,17 @@
   }
 }
 
-@media screen and (max-height:800px){
+@media screen and (max-height:768px){
   .dashContainer{
     display:flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-height:800px){
+  .cake{
+    grid-column:5;
+    grid-row:5;
+    margin-bottom:50px
   }
 }

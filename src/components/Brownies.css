@@ -5,7 +5,7 @@
 }
 
 
-@media screen and (max-height:800px){
+@media screen and (max-height:768px){
   .browniePic{
     width:20%;
     margin-left:60px;
@@ -14,3 +14,4 @@
     margin-left:60px;
   }
 }
+

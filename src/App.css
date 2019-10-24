@@ -59,7 +59,7 @@ nav{
   width:1526px;
 }
 
-@media screen and (max-height:800px){
+@media screen and (max-height:768px){
   .appMain{
     background:white;
   }
