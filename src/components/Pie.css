@@ -4,6 +4,12 @@
   margin-right:auto;
 }
 
+.piePic:hover{
+  background:linear-gradient(to right top, #fdf6c8, #faedc0, #f7e4b9, #f3dbb2, #efd2ac);
+  border-radius:50%;
+}
+
+
 @media screen and (max-height:760px){
   .piePic{
     width:30%;
