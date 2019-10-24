@@ -1,7 +1,8 @@
+//imports
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Show.css';
-
+//setting up React components
 class Show extends Component {
   constructor(props) {
     super(props);
@@ -27,12 +28,10 @@ class Show extends Component {
       .then(console.log('Updated'));
     this.props.history.push(`/edit/${this.state.dessert.title}`);
   }
-
   //   component did mount method that finds and returns dessert by title from db
   componentDidMount() {
     const dessert = this.state.selectedDessert;
     const url = 'https://d-z-desserts.herokuapp.com/titles/' + dessert;
-
     axios
       .get(url)
       .then(response => {
@@ -42,14 +41,13 @@ class Show extends Component {
         console.error(err);
       });
   }
-
+//   this renders the page and returns the result
   render() {
     if (this.state.dessert.items) {
       var ingredientsList = this.state.dessert.items.map((item, index) => (
         <li key={index}>{item}</li>
       ));
     }
-
     if (this.state.dessert.steps) {
       var stepsList = this.state.dessert.steps.map((item, index) => (
         <li key={index}>{item}</li>
@@ -66,8 +64,6 @@ class Show extends Component {
         </div>
         <div className="show-text-container">
           <h2>{this.state.dessert.title}</h2>
-          {/* <h5>ID: </h5>
-					<p>{this.state.dessert._id}</p> */}
           <br></br>
           <h5>Category: </h5>
           <p>{this.state.dessert.category}</p>
@@ -90,7 +86,7 @@ class Show extends Component {
           No take backs. The delete button is for real.
         </section>
         <button onClick={this.edit} className="edit">
-          Edit
+           Edit 
         </button>
         <button onClick={this.delete} className="areYouSure">
           Delete
