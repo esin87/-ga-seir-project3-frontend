@@ -4,13 +4,12 @@ import './New.css';
 
 //learned form validation in React: https://goshakkk.name/instant-form-fields-validation-react/
 
-function validate(title, description, items, steps, image) {
+function validate(title, description, items, steps) {
 	return {
 		title: title.length === 0,
 		description: description.length === 0,
 		items: items.length === 0,
-		steps: steps.length === 0,
-		image: image.length === 0
+		steps: steps.length === 0
 	};
 }
 
@@ -21,15 +20,14 @@ class New extends Component {
 			title: '',
 			category: 'Other',
 			description: '',
-			items: [],
-			steps: [],
+			items: '',
+			steps: '',
 			image: '',
 			touched: {
 				title: false,
 				description: false,
 				items: false,
-				steps: false,
-				image: false
+				steps: false
 			}
 		};
 
@@ -46,12 +44,15 @@ class New extends Component {
 	handleSubmit(evt) {
 		evt.preventDefault();
 
+		let arrayifiedItems = this.state.items.split('**');
+		let arrayifiedSteps = this.state.steps.split('**');
+
 		const dessert = {
 			title: this.state.title,
 			category: this.state.category,
 			description: this.state.description,
-			items: [this.state.items],
-			steps: [this.state.steps],
+			items: arrayifiedItems,
+			steps: arrayifiedSteps,
 			image: this.state.image
 		};
 
@@ -84,8 +85,7 @@ class New extends Component {
 			this.state.title,
 			this.state.description,
 			this.state.items,
-			this.state.steps,
-			this.state.image
+			this.state.steps
 		);
 
 		const isEnabled = !Object.keys(errors).some(x => errors[x]);
@@ -133,6 +133,8 @@ class New extends Component {
 						/>
 						{/* //items */}
 						Items
+						<br></br>
+						<h6>(Separate items with **)</h6>
 						<textarea
 							rows="7"
 							className={shouldMarkError('items') ? 'error' : ''}
@@ -141,10 +143,11 @@ class New extends Component {
 							type="text"
 							value={this.state.items}
 							onChange={this.handleChange}
-							placeholder="Enter ingredients"
+							placeholder="Enter ingredients, e.g., Eggs ** Milk ** Flour"
 						/>
 						{/* //steps */}
-						Steps
+						Steps<br></br>
+						<h6>(Separate steps with **)</h6>
 						<textarea
 							rows="14"
 							className={shouldMarkError('steps') ? 'error' : ''}
@@ -153,13 +156,11 @@ class New extends Component {
 							type="text"
 							value={this.state.steps}
 							onChange={this.handleChange}
-							placeholder="Enter recipe steps"
+							placeholder="Enter recipe steps, e.g., 1. Combine dry ingredients in a bowl. ** 2. Combine wet ingredients"
 						/>
 						{/* //image */}
 						Image URL
 						<input
-							className={shouldMarkError('image') ? 'error' : ''}
-							onBlur={this.handleBlur('image')}
 							name="image"
 							type="text"
 							value={this.state.image}
@@ -167,7 +168,7 @@ class New extends Component {
 							placeholder="Enter image URL"
 						/>
 						<input type="submit" value="Submit" disabled={!isEnabled} />
-						<p>*All fields required.</p>
+						<p>*All fields required except image.</p>
 					</form>
 				</div>
 			</div>

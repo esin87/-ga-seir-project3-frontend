@@ -10,6 +10,11 @@ img{
   width:50%;
 }
 
+.cookieImage:hover{
+  background:rgb(255,229,180,.8);
+  border-radius:50%;
+}
+
 
 
 h3{
@@ -23,6 +28,27 @@ a{
 
 
 @media screen and (max-height:760px){
+  .cookieImage{
+    width:20%;
+    margin-left:30px;
+  }
+  .cookieWord{
+    margin-left:25px;
+  }
+}
+
+@media screen and (max-width:760px){
+  .cookieImage{
+    width:20%;
+    margin-left:30px;
+  }
+  .cookieWord{
+    margin-left:25px;
+  }
+}
+
+
+@media screen and (max-width:736px){
   .cookieImage{
     width:20%;
     margin-left:30px;
