@@ -4,7 +4,7 @@
   margin-right:auto;
 }
 
-@media screen and (max-height:768px){
+@media screen and (max-height:760px){
   .piePic{
     width:30%;
     margin-left:20px;
