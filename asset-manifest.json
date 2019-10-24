@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ga-seir-project3-frontend/static/css/main.9e544327.chunk.css",
-    "main.js": "/ga-seir-project3-frontend/static/js/main.1ed12779.chunk.js",
-    "main.js.map": "/ga-seir-project3-frontend/static/js/main.1ed12779.chunk.js.map",
+    "main.css": "/ga-seir-project3-frontend/static/css/main.e565f38f.chunk.css",
+    "main.js": "/ga-seir-project3-frontend/static/js/main.52eb7af3.chunk.js",
+    "main.js.map": "/ga-seir-project3-frontend/static/js/main.52eb7af3.chunk.js.map",
     "runtime-main.js": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js",
     "runtime-main.js.map": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js.map",
-    "static/js/2.067118df.chunk.js": "/ga-seir-project3-frontend/static/js/2.067118df.chunk.js",
-    "static/js/2.067118df.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.067118df.chunk.js.map",
+    "static/js/2.040a30a5.chunk.js": "/ga-seir-project3-frontend/static/js/2.040a30a5.chunk.js",
+    "static/js/2.040a30a5.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.040a30a5.chunk.js.map",
     "index.html": "/ga-seir-project3-frontend/index.html",
-    "precache-manifest.39a7938df6870042281289d3a40bd730.js": "/ga-seir-project3-frontend/precache-manifest.39a7938df6870042281289d3a40bd730.js",
+    "precache-manifest.31ee560d028f3c57686424b9845a0587.js": "/ga-seir-project3-frontend/precache-manifest.31ee560d028f3c57686424b9845a0587.js",
     "service-worker.js": "/ga-seir-project3-frontend/service-worker.js",
-    "static/css/main.9e544327.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.9e544327.chunk.css.map",
+    "static/css/main.e565f38f.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.e565f38f.chunk.css.map",
     "static/media/applepie.png": "/ga-seir-project3-frontend/static/media/applepie.66b48c23.png",
     "static/media/New.css": "/ga-seir-project3-frontend/static/media/baking.ea9a3a21.jpg",
     "static/media/brownie.png": "/ga-seir-project3-frontend/static/media/brownie.6ade738f.png",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6a895922.js",
-    "static/js/2.067118df.chunk.js",
-    "static/css/main.9e544327.chunk.css",
-    "static/js/main.1ed12779.chunk.js"
+    "static/js/2.040a30a5.chunk.js",
+    "static/css/main.e565f38f.chunk.css",
+    "static/js/main.52eb7af3.chunk.js"
   ]
 }

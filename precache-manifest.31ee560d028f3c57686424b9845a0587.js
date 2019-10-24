@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70ceac5b7c5d68ac513dd3f515ace9bf",
+    "revision": "ac1eda9ebed11a8701232ab3a5b84d9f",
     "url": "/ga-seir-project3-frontend/index.html"
   },
   {
-    "revision": "418e569017454d8d0e68",
-    "url": "/ga-seir-project3-frontend/static/css/main.9e544327.chunk.css"
+    "revision": "aaf3e11955ece3015468",
+    "url": "/ga-seir-project3-frontend/static/css/main.e565f38f.chunk.css"
   },
   {
-    "revision": "8940679e4522c7d9d68d",
-    "url": "/ga-seir-project3-frontend/static/js/2.067118df.chunk.js"
+    "revision": "bfc72bdf414ae3b150e1",
+    "url": "/ga-seir-project3-frontend/static/js/2.040a30a5.chunk.js"
   },
   {
-    "revision": "418e569017454d8d0e68",
-    "url": "/ga-seir-project3-frontend/static/js/main.1ed12779.chunk.js"
+    "revision": "aaf3e11955ece3015468",
+    "url": "/ga-seir-project3-frontend/static/js/main.52eb7af3.chunk.js"
   },
   {
     "revision": "48fe890eb2b93d5f78bf",
