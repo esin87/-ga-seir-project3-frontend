@@ -18,7 +18,17 @@ class Edit extends Component {
 
 	handleSubmit(evt) {
 		evt.preventDefault();
-		const dessert = this.state;
+		let arrayifiedItems = this.state.items.split('**');
+		let arrayifiedSteps = this.state.steps.split('**');
+
+		const dessert = {
+			title: this.state.title,
+			category: this.state.category,
+			description: this.state.description,
+			items: arrayifiedItems,
+			steps: arrayifiedSteps,
+			image: this.state.image
+		};
 
 		axios
 			.put(
@@ -44,7 +54,8 @@ class Edit extends Component {
 				this.setState(response.data);
 			})
 			.then(response => {
-				console.log(this.state);
+				this.setState({ items: this.state.items.join(' ** ') });
+				this.setState({ steps: this.state.steps.join(' ** ') });
 			})
 			.catch(err => {
 				console.error(err);
@@ -57,8 +68,7 @@ class Edit extends Component {
 				this.state.title.length > 0 &&
 				this.state.description.length > 0 &&
 				this.state.items.length > 0 &&
-				this.state.steps.length > 0 &&
-				this.state.image.length > 0;
+				this.state.steps.length > 0;
 		}
 
 		return (
@@ -97,6 +107,8 @@ class Edit extends Component {
 					/>
 					{/* //items */}
 					Items
+					<br></br>
+					<h6>(Separate items with **)</h6>
 					<textarea
 						rows="5"
 						name="items"
@@ -106,6 +118,7 @@ class Edit extends Component {
 					/>
 					{/* //steps */}
 					Steps
+					<h6>(Separate steps with **)</h6>
 					<textarea
 						rows="14"
 						name="steps"
@@ -122,7 +135,7 @@ class Edit extends Component {
 						onChange={this.handleChange}
 					/>
 					<input type="submit" value="Update" disabled={!isEnabled} />
-					<p>*All fields required.</p>
+					<p>*All fields required except image.</p>
 				</form>
 			</div>
 		);
