@@ -94,6 +94,7 @@ export default class TeamAbout extends Component {
 						</a>
 					</p>
 				</section>
+                <h1 className="foot-team">Thanks for visiting our site!</h1>
 			</div>
 		);
 	}
