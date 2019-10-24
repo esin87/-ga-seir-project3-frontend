@@ -33,9 +33,8 @@ class Category extends Component {
 			return (
 				<li>
 					<Link to={`/titles/${item.title}`} key={item.title}>
-						{item.title}:
+						{item.title}: {item.description}
 					</Link>{' '}
-					{item.description}
 				</li>
 			);
 		});
@@ -45,9 +44,7 @@ class Category extends Component {
 					<div className="innerCategory">
 						<h1>{this.state.category}</h1>
 						<ul>
-							<li>
-								{list}
-							</li>
+							<li>{list}</li>
 						</ul>
 					</div>
 				</div>
