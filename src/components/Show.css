@@ -1,8 +1,7 @@
 .showImage {
   width: 20%;
   margin: auto;
-  border-radius:10%;
-
+  border-radius: 10%;
 }
 .show-container {
   background-image: url('../Project-3-Pictures/other/showBackG.jpg');
@@ -13,6 +12,12 @@
   flex-direction: column;
   margin: auto;
   padding: 40px;
+}
+.category {
+  text-align: left;
+}
+.description {
+  text-align: left;
 }
 .show-text-container {
   color: black;
@@ -25,6 +30,11 @@
   border-radius: 3%;
   margin-top: 30px;
 }
+.IngList {
+  display: inline-block;
+  padding-right: 0.5em;
+  text-align: justify;
+}
 .makeIt {
   display: inline-block;
   padding-right: 0.5em;
@@ -35,7 +45,6 @@
   margin: 10px;
   font-size: 0.6em;
   color: black;
-  
 }
 .edit {
   margin: 30px;
@@ -65,4 +74,3 @@
   background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
   background-color: #ffab23;
 }
-
