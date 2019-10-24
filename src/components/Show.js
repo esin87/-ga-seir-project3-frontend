@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Show.css';
-import { Link } from 'react-router-dom';
 
 class Show extends Component {
 	constructor(props) {
@@ -13,12 +12,11 @@ class Show extends Component {
 			dessert: {}
 		};
 	}
-	// Adding Delete
+	// Adding Delete 
 	delete() {
-		const dessert = this.state.selectedDessert;
 		axios
-			.delete('https://d-z-desserts.herokuapp.com/titles/' + dessert)
-			.then(console.log('Goodbye'));
+			.delete(`https://d-z-desserts.herokuapp.com/${this.state.dessert._id}` )
+			.then(console.log('Goodbye'+ `${this.state.dessert._id}` ));
 		this.props.history.push('/');
 	}
 	// Adding Edit
@@ -63,11 +61,14 @@ class Show extends Component {
 					<img
 						className="showImage"
 						src={this.state.dessert.image}
-						alt="this dessert"
+						alt="This is a picture of a dessert"
 					/>
 				</div>
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
+					<h5>ID: </h5>
+					<p>{this.state.dessert._id}</p>
+					<br></br>
 					<h5>Category: </h5>
 					<p>{this.state.dessert.category}</p>
 					<br></br>
@@ -78,7 +79,7 @@ class Show extends Component {
 					<ul className="IngList">{this.state.dessert.items && ingredientsList}</ul>
 					<br></br>
 					<h5>Steps to make this dessert: </h5>
-					<ul className="makeIt">{this.state.dessert.steps && stepsList}</ul>
+					<ul className="makeItyou">{this.state.dessert.steps && stepsList}</ul>
 				</div>
 				<section className="smallText">
 					Click Edit to save your changes.
