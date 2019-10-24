@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/ga-seir-project3-frontend/static/css/main.e565f38f.chunk.css",
-    "main.js": "/ga-seir-project3-frontend/static/js/main.52eb7af3.chunk.js",
-    "main.js.map": "/ga-seir-project3-frontend/static/js/main.52eb7af3.chunk.js.map",
+    "main.css": "/ga-seir-project3-frontend/static/css/main.3274570d.chunk.css",
+    "main.js": "/ga-seir-project3-frontend/static/js/main.c601da93.chunk.js",
+    "main.js.map": "/ga-seir-project3-frontend/static/js/main.c601da93.chunk.js.map",
     "runtime-main.js": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js",
     "runtime-main.js.map": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js.map",
-    "static/js/2.040a30a5.chunk.js": "/ga-seir-project3-frontend/static/js/2.040a30a5.chunk.js",
-    "static/js/2.040a30a5.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.040a30a5.chunk.js.map",
+    "static/js/2.21bd3c78.chunk.js": "/ga-seir-project3-frontend/static/js/2.21bd3c78.chunk.js",
+    "static/js/2.21bd3c78.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.21bd3c78.chunk.js.map",
     "index.html": "/ga-seir-project3-frontend/index.html",
-    "precache-manifest.31ee560d028f3c57686424b9845a0587.js": "/ga-seir-project3-frontend/precache-manifest.31ee560d028f3c57686424b9845a0587.js",
+    "precache-manifest.6d66f35addb660c1eb0037b2b550f922.js": "/ga-seir-project3-frontend/precache-manifest.6d66f35addb660c1eb0037b2b550f922.js",
     "service-worker.js": "/ga-seir-project3-frontend/service-worker.js",
-    "static/css/main.e565f38f.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.e565f38f.chunk.css.map",
+    "static/css/main.3274570d.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.3274570d.chunk.css.map",
     "static/media/applepie.png": "/ga-seir-project3-frontend/static/media/applepie.66b48c23.png",
     "static/media/New.css": "/ga-seir-project3-frontend/static/media/baking.ea9a3a21.jpg",
     "static/media/brownie.png": "/ga-seir-project3-frontend/static/media/brownie.6ade738f.png",
-    "static/media/Category.css": "/ga-seir-project3-frontend/static/media/category.78f6db5d.png",
+    "static/media/Category.css": "/ga-seir-project3-frontend/static/media/category3.26b3f24e.jpg",
     "static/media/chocolatechip.png": "/ga-seir-project3-frontend/static/media/chocolatechip.7a897d31.png",
     "static/media/donuts.png": "/ga-seir-project3-frontend/static/media/donuts.1b750ef2.png",
+    "static/media/ken-cake1.png": "/ga-seir-project3-frontend/static/media/ken-cake1.ab425f01.png",
     "static/media/kitkat.png": "/ga-seir-project3-frontend/static/media/kitkat.db4c1610.png",
     "static/media/other.png": "/ga-seir-project3-frontend/static/media/other.e03ce322.png",
     "static/media/Show.css": "/ga-seir-project3-frontend/static/media/showBackG.3d333e56.jpg",
@@ -25,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6a895922.js",
-    "static/js/2.040a30a5.chunk.js",
-    "static/css/main.e565f38f.chunk.css",
-    "static/js/main.52eb7af3.chunk.js"
+    "static/js/2.21bd3c78.chunk.js",
+    "static/css/main.3274570d.chunk.css",
+    "static/js/main.c601da93.chunk.js"
   ]
 }

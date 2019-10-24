@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ga-seir-project3-frontend/precache-manifest.31ee560d028f3c57686424b9845a0587.js"
+  "/ga-seir-project3-frontend/precache-manifest.6d66f35addb660c1eb0037b2b550f922.js"
 );
 
 self.addEventListener('message', (event) => {
