@@ -1,5 +1,8 @@
 .showImage {
-  width: 50%;
+  width: 20%;
+  margin: auto;
+  border-radius:10%;
+
 }
 .show-container {
   background-image: url('../Project-3-Pictures/other/showBackG.jpg');
