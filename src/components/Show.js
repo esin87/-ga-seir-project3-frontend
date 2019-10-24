@@ -13,7 +13,6 @@ class Show extends Component {
 			dessert: {}
 		};
 	}
-
 	// Adding Delete
 	delete() {
 		axios
@@ -35,16 +34,14 @@ class Show extends Component {
 		const dessert = this.state.selectedDessert;
 		const url = 'https://d-z-desserts.herokuapp.com/titles/' + dessert;
 
-		trackPromise(
-			axios
-				.get(url)
-				.then(response => {
-					this.setState({ dessert: response.data });
-				})
-				.catch(err => {
-					console.error(err);
-				})
-		);
+		axios
+			.get(url)
+			.then(response => {
+				this.setState({ dessert: response.data });
+			})
+			.catch(err => {
+				console.error(err);
+			});
 	}
 
 	render() {
@@ -89,19 +86,13 @@ class Show extends Component {
 						{this.state.dessert.steps && stepsList}
 					</ul>
 				</div>
+				<section className="smallText">Click Edit to make changes.</section>
 				<section className="smallText">
-					Click Edit to save your changes.
+					No take backs. The delete button is for real.
 				</section>
 				<button onClick={this.edit} className="edit">
 					Edit
 				</button>
-				{/* <Link to={`/edit/${this.state.dessert.title}`} className="edit">
-					Edit
-				</Link> */}
-				<></>
-				<section className="smallText">
-					No take backs. This deletes for real.
-				</section>
 				<button onClick={this.delete} className="areYouSure">
 					Delete
 				</button>
