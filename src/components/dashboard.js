@@ -10,6 +10,7 @@ import Pastries from './Pastries';
 import Pies from './Pies';
 import Other from './Others';
 import Brownies from './Brownies';
+
 //import Category from './Category';
 //this is the correct file
 class Dashboard extends Component {
@@ -22,42 +23,42 @@ class Dashboard extends Component {
 
 	render() {
 		return (
-			<div className="dashContainer">
-				<div className="cookie">
-					<Link to="/categories/Cookies">
-						<Cookies className="test" />
-					</Link>
-				</div>
-				<div className="cake">
-					<Link to="/categories/Cakes">
+			<div className='dashContainer'>
+				<div className='cookie'>
+					<Link to='/categories/Cookies'>
+						<Cookies className='test' />
+					</Link>{' '}
+				</div>{' '}
+				<div className='cake'>
+					<Link to='/categories/Cakes'>
 						<Cakes />
-					</Link>
-				</div>
-				<div className="candies">
-					<Link to="/categories/Candies">
+					</Link>{' '}
+				</div>{' '}
+				<div className='candies'>
+					<Link to='/categories/Candies'>
 						<Candies />
-					</Link>
-				</div>
-				<div className="pastries">
-					<Link to="/categories/Pastries">
+					</Link>{' '}
+				</div>{' '}
+				<div className='pastries'>
+					<Link to='/categories/Pastries'>
 						<Pastries />
-					</Link>
-				</div>
-				<div className="pies">
-					<Link to="/categories/Pies">
+					</Link>{' '}
+				</div>{' '}
+				<div className='pies'>
+					<Link to='/categories/Pies'>
 						<Pies />
-					</Link>
-				</div>
-				<div className="brownies">
-					<Link to="/categories/Brownies">
+					</Link>{' '}
+				</div>{' '}
+				<div className='brownies'>
+					<Link to='/categories/Brownies'>
 						<Brownies />
-					</Link>
-				</div>
-				<div className="other">
-					<Link to="/categories/Other">
+					</Link>{' '}
+				</div>{' '}
+				<div className='other'>
+					<Link to='/categories/Other'>
 						<Other />
-					</Link>
-				</div>
+					</Link>{' '}
+				</div>{' '}
 			</div>
 		);
 	}
