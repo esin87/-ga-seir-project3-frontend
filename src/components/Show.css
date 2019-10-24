@@ -25,7 +25,6 @@
 .makeIt{
 display: inline-block;
 padding-right: .5em;
-font-weight: counter(number)bold;
 text-align: justify;
 }
 .smallText {
@@ -38,7 +37,6 @@ text-align: justify;
   margin: 10px;
   padding:10px;
   color: black;
-  align: left;
 }
 .areYouSure{
   margin: 10px;

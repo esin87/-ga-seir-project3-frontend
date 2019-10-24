@@ -12,12 +12,11 @@ class Show extends Component {
 			dessert: {}
 		};
 	}
-	// Adding Delete
+	// Adding Delete 
 	delete() {
-		const dessert = this.state.selectedDessert;
 		axios
-			.delete('https://d-z-desserts.herokuapp.com/titles/' + dessert)
-			.then(console.log('Goodbye'));
+			.delete(`https://d-z-desserts.herokuapp.com/${this.state.dessert._id}` )
+			.then(console.log('Goodbye'+ `${this.state.dessert._id}` ));
 		this.props.history.push('/');
 	}
 	// Adding Edit
@@ -62,11 +61,14 @@ class Show extends Component {
 					<img
 						className="showImage"
 						src={this.state.dessert.image}
-						alt="this dessert"
+						alt="This is a picture of a dessert"
 					/>
 				</div>
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
+					{/* <h5>ID: </h5>
+					<p>{this.state.dessert._id}</p> */}
+					<br></br>
 					<h5>Category: </h5>
 					<p>{this.state.dessert.category}</p>
 					<br></br>
