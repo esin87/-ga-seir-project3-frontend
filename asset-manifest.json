@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ga-seir-project3-frontend/static/css/main.3274570d.chunk.css",
-    "main.js": "/ga-seir-project3-frontend/static/js/main.c601da93.chunk.js",
-    "main.js.map": "/ga-seir-project3-frontend/static/js/main.c601da93.chunk.js.map",
+    "main.js": "/ga-seir-project3-frontend/static/js/main.c2c6e0bf.chunk.js",
+    "main.js.map": "/ga-seir-project3-frontend/static/js/main.c2c6e0bf.chunk.js.map",
     "runtime-main.js": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js",
     "runtime-main.js.map": "/ga-seir-project3-frontend/static/js/runtime-main.6a895922.js.map",
     "static/js/2.21bd3c78.chunk.js": "/ga-seir-project3-frontend/static/js/2.21bd3c78.chunk.js",
     "static/js/2.21bd3c78.chunk.js.map": "/ga-seir-project3-frontend/static/js/2.21bd3c78.chunk.js.map",
     "index.html": "/ga-seir-project3-frontend/index.html",
-    "precache-manifest.6d66f35addb660c1eb0037b2b550f922.js": "/ga-seir-project3-frontend/precache-manifest.6d66f35addb660c1eb0037b2b550f922.js",
+    "precache-manifest.706cd1837a2c6fc832e1ccc280073a85.js": "/ga-seir-project3-frontend/precache-manifest.706cd1837a2c6fc832e1ccc280073a85.js",
     "service-worker.js": "/ga-seir-project3-frontend/service-worker.js",
     "static/css/main.3274570d.chunk.css.map": "/ga-seir-project3-frontend/static/css/main.3274570d.chunk.css.map",
     "static/media/applepie.png": "/ga-seir-project3-frontend/static/media/applepie.66b48c23.png",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.6a895922.js",
     "static/js/2.21bd3c78.chunk.js",
     "static/css/main.3274570d.chunk.css",
-    "static/js/main.c601da93.chunk.js"
+    "static/js/main.c2c6e0bf.chunk.js"
   ]
 }
