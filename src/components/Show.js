@@ -66,8 +66,8 @@ class Show extends Component {
 				</div>
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
-					<h5>ID: </h5>
-					<p>{this.state.dessert._id}</p>
+					{/* <h5>ID: </h5>
+					<p>{this.state.dessert._id}</p> */}
 					<br></br>
 					<h5>Category: </h5>
 					<p>{this.state.dessert.category}</p>
