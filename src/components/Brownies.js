@@ -7,7 +7,7 @@ class Brownies extends Component{
     return(
       <div className='cookieBox'>
         <img className='browniePic' src={require('../Project-3-Pictures/brownies/brownie.png')} alt='brownies'></img>
-        <h3>Brownies</h3>
+        <h3 className='brownieWord'>Brownies</h3>
       </div>
     )
   }

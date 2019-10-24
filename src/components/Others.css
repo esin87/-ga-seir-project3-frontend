@@ -1,16 +1,16 @@
-.browniePic{
-  width:30%;
+.otherPic{
+  width:50%;
   margin-left:auto;
   margin-right:auto;
 }
 
 
 @media screen and (max-height:800px){
-  .browniePic{
+  .otherPic{
     width:20%;
-    margin-left:60px;
+    margin-left:170px;
   }
-  .brownieWord{
-    margin-left:60px;
+  .otherWord{
+    margin-left:170px;
   }
 }

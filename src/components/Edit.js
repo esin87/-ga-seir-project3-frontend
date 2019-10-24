@@ -52,6 +52,15 @@ class Edit extends Component {
 	}
 
 	render() {
+		if (this.state.title) {
+			var isEnabled =
+				this.state.title.length > 0 &&
+				this.state.description.length > 0 &&
+				this.state.items.length > 0 &&
+				this.state.steps.length > 0 &&
+				this.state.image.length > 0;
+		}
+
 		return (
 			<div className="newContainer">
 				<form onSubmit={this.handleSubmit}>
@@ -112,7 +121,8 @@ class Edit extends Component {
 						value={this.state.image}
 						onChange={this.handleChange}
 					/>
-					<input type="submit" value="Update" />
+					<input type="submit" value="Update" disabled={!isEnabled} />
+					<p>*All fields required.</p>
 				</form>
 			</div>
 		);

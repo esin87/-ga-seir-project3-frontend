@@ -9,6 +9,7 @@
 .cookie{
   grid-column:2;
   grid-row:6;
+  margin-bottom:20px;
 }
 
 .cake{
@@ -21,7 +22,8 @@
 .candies{
   grid-column:3;
   grid-row:6;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+
 }
 
 .other{
@@ -34,6 +36,7 @@
 .pies{
   grid-column:1;
   grid-row:6;
+  margin-top:10px;
 }
 
 .pastries{
@@ -44,6 +47,38 @@
 
 
 .brownies{
-  grid-column:5/6;
+  grid-column:5;
   grid-row:4/5;
+  margin-right:50px;
+}
+
+@media screen and (max-height:850px){
+  .other{
+    margin-top:120px;
+  }
+  .cake{
+    margin-bottom:70px;
+  }
+  .pies{
+    margin-top:20px;
+  }
+}
+
+@media screen and (max-height:860px){
+  .other{
+    margin-top:120px;
+  }
+  .cake{
+    margin-bottom:90px;
+  }
+  .pies{
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-height:800px){
+  .dashContainer{
+    display:flex;
+    flex-direction: column;
+  }
 }

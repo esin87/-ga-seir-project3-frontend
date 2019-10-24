@@ -3,17 +3,16 @@ form {
 	flex-direction: column;
 	width: 500px;
 	margin: auto;
-	background:rgb(255,240,207,.8);
-	padding:40px;
-	border-radius:3%;
-	margin-top:30px;
+	background: rgb(255, 240, 207, 0.8);
+	padding: 40px;
+	border-radius: 3%;
+	margin-top: 30px;
 }
 
 input,
 select {
 	margin: 10px 0;
 	color: black;
-	
 }
 
 h2 {
@@ -27,10 +26,13 @@ h2 {
 	height:100vh;
 } */
 
-.newContainer{
-	border:1px solid black;
-	background-image:url('../Project-3-Pictures/other/baking.jpg');
+.newContainer {
+	border: 1px solid black;
+	background-image: url('../Project-3-Pictures/other/baking.jpg');
 	background-size: cover;
-	height:100vh;
+	height: 100vh;
 }
 
+.error {
+	border: 1px solid red;
+}

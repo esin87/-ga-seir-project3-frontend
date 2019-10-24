@@ -45,15 +45,15 @@ class Show extends Component {
 
 	render() {
 		if (this.state.dessert.items) {
-			console.log(this.state.dessert.items);
-			var ingredientsList = this.state.dessert.items.map(item => (
-				<li>{item}</li>
+			var ingredientsList = this.state.dessert.items.map((item, index) => (
+				<li key={index}>{item}</li>
 			));
 		}
 
 		if (this.state.dessert.steps) {
-			console.log(this.state.dessert.steps);
-			var stepsList = this.state.dessert.steps.map(item => <li>{item}</li>);
+			var stepsList = this.state.dessert.steps.map((item, index) => (
+				<li key={index}>{item}</li>
+			));
 		}
 		return (
 			<div className="show-container">
@@ -76,10 +76,14 @@ class Show extends Component {
 					<p>{this.state.dessert.description}</p>
 					<br></br>
 					<h5>Ingredients: </h5>
-					<ul className="IngList">{this.state.dessert.items && ingredientsList}</ul>
+					<ul className="IngList">
+						{this.state.dessert.items && ingredientsList}
+					</ul>
 					<br></br>
 					<h5>Steps to make this dessert: </h5>
-					<ul className="makeItyou">{this.state.dessert.steps && stepsList}</ul>
+					<ul className="makeIt">
+						{this.state.dessert.steps && stepsList}
+					</ul>
 				</div>
 				<section className="smallText">
 					Click Edit to save your changes.

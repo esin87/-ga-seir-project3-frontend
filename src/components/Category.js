@@ -46,7 +46,7 @@ class Category extends Component {
 						<h1>{this.state.category}</h1>
 						<ul>
 							<li>
-								<div className="itemDiv">{list}</div>
+								{list}
 							</li>
 						</ul>
 					</div>
