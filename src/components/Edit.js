@@ -35,11 +35,16 @@ class Edit extends Component {
 				'https://d-z-desserts.herokuapp.com/edit/' + this.state._id,
 				dessert
 			)
-			.then(res => {})
+			.then(res => {
+				setTimeout(() => {
+					this.props.history.push({
+						pathname: `/titles/${dessert.title}`
+					});
+				}, 2000);
+			})
 			.catch(err => {
 				console.error(err);
 			});
-		this.props.history.push('/');
 	}
 
 	//   component did mount method that finds and returns dessert by title from db

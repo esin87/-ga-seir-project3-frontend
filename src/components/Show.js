@@ -59,7 +59,7 @@ class Show extends Component {
 					<img
 						className="showImage"
 						src={this.state.dessert.image}
-						alt="This is a picture of a dessert"
+						alt={`This dessert is ${this.state.dessert.title}.`}
 					/>
 				</div>
 				<div className="show-text-container">

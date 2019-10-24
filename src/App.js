@@ -56,7 +56,6 @@ function App() {
 							path="/categories/:category"
 							render={routerProps => <Category {...routerProps} />}
 						/>
-						{/* <Redirect to="/" component={Dashboard} />{' '} */}
 					</div>{' '}
 				</Switch>{' '}
 			</main>{' '}

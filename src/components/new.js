@@ -58,13 +58,16 @@ class New extends Component {
 
 		axios
 			.post('https://d-z-desserts.herokuapp.com/create', dessert)
+			.then(res => {
+				setTimeout(() => {
+					this.props.history.push({
+						pathname: `/titles/${dessert.title}`
+					});
+				}, 2000);
+			})
 			.catch(err => {
 				console.error(err);
 			});
-
-		this.props.history.push({
-			pathname: `/titles/${dessert.title}`
-		});
 	}
 
 	handleBlur = field => evt => {
