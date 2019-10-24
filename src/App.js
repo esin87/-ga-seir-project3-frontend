@@ -8,9 +8,8 @@ import Edit from './components/Edit';
 import Category from './components/Category';
 import TeamAbout from './components/TeamAbout';
 
-//ready to deploy
-
 function App() {
+
 	return (
 		<div>
 			<div className="navBox">
