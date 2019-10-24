@@ -4,13 +4,12 @@ import './New.css';
 
 //learned form validation in React: https://goshakkk.name/instant-form-fields-validation-react/
 
-function validate(title, description, items, steps, image) {
+function validate(title, description, items, steps) {
 	return {
 		title: title.length === 0,
 		description: description.length === 0,
 		items: items.length === 0,
-		steps: steps.length === 0,
-		image: image.length === 0
+		steps: steps.length === 0
 	};
 }
 
@@ -28,8 +27,7 @@ class New extends Component {
 				title: false,
 				description: false,
 				items: false,
-				steps: false,
-				image: false
+				steps: false
 			}
 		};
 
@@ -87,8 +85,7 @@ class New extends Component {
 			this.state.title,
 			this.state.description,
 			this.state.items,
-			this.state.steps,
-			this.state.image
+			this.state.steps
 		);
 
 		const isEnabled = !Object.keys(errors).some(x => errors[x]);
@@ -164,8 +161,6 @@ class New extends Component {
 						{/* //image */}
 						Image URL
 						<input
-							className={shouldMarkError('image') ? 'error' : ''}
-							onBlur={this.handleBlur('image')}
 							name="image"
 							type="text"
 							value={this.state.image}
@@ -173,7 +168,7 @@ class New extends Component {
 							placeholder="Enter image URL"
 						/>
 						<input type="submit" value="Submit" disabled={!isEnabled} />
-						<p>*All fields required.</p>
+						<p>*All fields required except image.</p>
 					</form>
 				</div>
 			</div>
