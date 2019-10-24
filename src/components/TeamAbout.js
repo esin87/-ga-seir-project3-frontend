@@ -3,6 +3,7 @@ import './TeamAbout.css';
 
 export default class TeamAbout extends Component {
 
+    
 
     render() {
         return ( <div className = "team" >
