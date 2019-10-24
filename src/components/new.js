@@ -21,8 +21,8 @@ class New extends Component {
 			title: '',
 			category: 'Other',
 			description: '',
-			items: [],
-			steps: [],
+			items: '',
+			steps: '',
 			image: '',
 			touched: {
 				title: false,
@@ -46,12 +46,15 @@ class New extends Component {
 	handleSubmit(evt) {
 		evt.preventDefault();
 
+		let arrayifiedItems = this.state.items.split('**');
+		let arrayifiedSteps = this.state.steps.split('**');
+
 		const dessert = {
 			title: this.state.title,
 			category: this.state.category,
 			description: this.state.description,
-			items: [this.state.items],
-			steps: [this.state.steps],
+			items: arrayifiedItems,
+			steps: arrayifiedSteps,
 			image: this.state.image
 		};
 
@@ -133,6 +136,8 @@ class New extends Component {
 						/>
 						{/* //items */}
 						Items
+						<br></br>
+						<h6>(Separate items with **)</h6>
 						<textarea
 							rows="7"
 							className={shouldMarkError('items') ? 'error' : ''}
@@ -141,10 +146,11 @@ class New extends Component {
 							type="text"
 							value={this.state.items}
 							onChange={this.handleChange}
-							placeholder="Enter ingredients"
+							placeholder="Enter ingredients, e.g., Eggs ** Milk ** Flour"
 						/>
 						{/* //steps */}
-						Steps
+						Steps<br></br>
+						<h6>(Separate steps with **)</h6>
 						<textarea
 							rows="14"
 							className={shouldMarkError('steps') ? 'error' : ''}
@@ -153,7 +159,7 @@ class New extends Component {
 							type="text"
 							value={this.state.steps}
 							onChange={this.handleChange}
-							placeholder="Enter recipe steps"
+							placeholder="Enter recipe steps, e.g., 1. Combine dry ingredients in a bowl. ** 2. Combine wet ingredients"
 						/>
 						{/* //image */}
 						Image URL
