@@ -36,35 +36,23 @@ function App() {
 				<Switch>
 					<div>
 						<div className="appMain">
-							<Route
-								path={process.env.PUBLIC_URL + '/'}
-								exact={true}
-								component={Dashboard}
-							/>{' '}
+							<Route path="/" exact={true} component={Dashboard} />{' '}
 						</div>{' '}
+						<Route exact={true} path="/about" component={TeamAbout} />{' '}
+						<Route path="/create" exact={true} component={New} />{' '}
 						<Route
 							exact={true}
-							path={process.env.PUBLIC_URL + '/about'}
-							component={TeamAbout}
-						/>{' '}
-						<Route
-							path={process.env.PUBLIC_URL + '/create'}
-							exact={true}
-							component={New}
-						/>{' '}
-						<Route
-							exact={true}
-							path={process.env.PUBLIC_URL + '/titles/:title'}
+							path="/titles/:title"
 							render={routerProps => <Show {...routerProps} />}
 						/>
 						<Route
 							exact={true}
-							path={process.env.PUBLIC_URL + '/edit/:title'}
+							path="/edit/:title"
 							render={routerProps => <Edit {...routerProps} />}
 						/>
 						<Route
 							exact={true}
-							path={process.env.PUBLIC_URL + '/categories/:category'}
+							path="/categories/:category"
 							render={routerProps => <Category {...routerProps} />}
 						/>
 					</div>{' '}

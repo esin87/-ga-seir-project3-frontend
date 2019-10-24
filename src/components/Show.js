@@ -17,7 +17,7 @@ class Show extends Component {
 	delete() {
 		axios
 			.delete(`https://d-z-desserts.herokuapp.com/${this.state.dessert._id}`)
-			.then(console.log('Goodbye' + `${this.state.dessert._id}`));
+			.then(console.log(`Goodbye ${this.state.dessert._id}`));
 		this.props.history.push('/');
 	}
 	// Adding Edit
@@ -65,7 +65,7 @@ class Show extends Component {
 				<div className="show-text-container">
 					<h2>{this.state.dessert.title}</h2>
 					<br></br>
-					<h5 >Category: </h5>
+					<h5>Category: </h5>
 					<p className="category">{this.state.dessert.category}</p>
 					<br></br>
 					<h5>Description: </h5>
