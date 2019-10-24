@@ -2,44 +2,44 @@
   width: 20%;
 }
 .show-container {
-	background-image:url('../Project-3-Pictures/other/showBackG.jpg');
+  background-image: url('../Project-3-Pictures/other/showBackG.jpg');
   background-size: cover;
 }
-.show-image-container{
+.show-image-container {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   margin: auto;
-  padding:40px;
+  padding: 40px;
 }
-.show-text-container{
+.show-text-container {
   color: black;
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   margin: auto;
-  padding:40px;
+  padding: 40px;
   border-style: solid;
   border-color: slateblue;
-	border-radius:3%;
-	margin-top:30px;
+  border-radius: 3%;
+  margin-top: 30px;
 }
-.makeIt{
-display: inline-block;
-padding-right: .5em;
-text-align: justify;
+.makeIt {
+  display: inline-block;
+  padding-right: 0.5em;
+  text-align: justify;
 }
 .smallText {
   margin: 10px;
-  font-size: 0.5em;
+  font-size: 1em;
   color: black;
   background: yellow;
 }
-.edit{
+.edit {
   margin: 10px;
-  padding:10px;
+  padding: 10px;
   color: black;
 }
-.areYouSure{
+.areYouSure {
   margin: 10px;
-  padding:10px;
+  padding: 10px;
   color: red;
 }
