@@ -60,8 +60,8 @@ nav{
 }
 
 @media screen and (max-height:760px){
-  .appMain{
-    background:white;
+  html, body, .appMain{
+    background:linear-gradient(90deg, rgba(2,0,36,1) 4%, rgba(162,159,166,1) 51%, rgba(222,219,215,1) 70%);;
   }
 }
 
