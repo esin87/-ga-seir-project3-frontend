@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d49ffc469351f9be0e3e1c6231a8a01f",
+    "revision": "1a7d90f826aac417a1863d8fa6c6416b",
     "url": "/ga-seir-project3-frontend/index.html"
   },
   {
-    "revision": "9a00ce5a6e8449053a06",
+    "revision": "8de53a7653491ccd7f6f",
     "url": "/ga-seir-project3-frontend/static/css/main.3274570d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ga-seir-project3-frontend/static/js/2.21bd3c78.chunk.js"
   },
   {
-    "revision": "9a00ce5a6e8449053a06",
-    "url": "/ga-seir-project3-frontend/static/js/main.c601da93.chunk.js"
+    "revision": "8de53a7653491ccd7f6f",
+    "url": "/ga-seir-project3-frontend/static/js/main.c2c6e0bf.chunk.js"
   },
   {
     "revision": "48fe890eb2b93d5f78bf",
