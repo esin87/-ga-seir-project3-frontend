@@ -35,6 +35,9 @@ h2 {
 @media screen and (max-width:667px){
   form{
 		width:350px;
-
+	}
+	.newContainer{
+		background-image:none;
+		border:none;
 	}
 }
