@@ -87,7 +87,7 @@ export default class TeamAbout extends Component {
 					</p>
 					<h3 className='who'> Vincent Chen</h3>
 					<p className='vincent'>
-						I really enjoy the frontend side of developing and am always looking to learn and incorporate new things. My portfolio is a work in progress but feel free to check it out:{' '}
+						I really enjoy the front end side of developing but I am always looking to learn and incorporate new things. My portfolio is a work in progress but feel free to check it out:{' '}
 						<a href='https://vbc221.github.io/Vincent-Portfolio-Choice/' target='_blank' rel='noopener noreferrer'>
 							My portfolio.
 						</a>
