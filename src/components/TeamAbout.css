@@ -1,9 +1,140 @@
-.team{
-    margin:5% 10%;
-
+.team {
+	margin: 5% 10%;
 }
 
+.post-link a {
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	margin: 3%;
+	text-align: center;
+	text-decoration: none;
+}
+.top {
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	margin: 3%;
+	padding: 10px;
+}
 
-.danger{
-  
+.kenCakeZone {
+	margin: 2% 23%;
+}
+
+.why {
+	background-color: lightgray;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 3%;
+}
+
+.how {
+	background-color: rgb(149, 208, 241);
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 3%;
+}
+
+.who {
+	background-color: rgb(253, 163, 234);
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 3%;
+}
+
+.brian {
+	background-color: rgb(5, 70, 45);
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 3%;
+}
+
+.brian a {
+	text-decoration: none;
+	color: pink;
+	background-color: black;
+	border-radius: 5px;
+}
+
+.brian a:hover {
+	text-decoration: none;
+	color: black;
+	background-color: pink;
+	border-radius: 5px;
+}
+
+.eleni {
+	background-color: rgb(0, 5, 3);
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 3%;
+}
+.eleni a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+.eleni a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+}
+.esin {
+	background-color: rgb(0, 7, 4);
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 3%;
+}
+.esin a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+.esin a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+}
+
+.vincent {
+	background-color: rgb(0, 3, 2);
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 3%;
+}
+
+.vincent a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+.vincent a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
 }
