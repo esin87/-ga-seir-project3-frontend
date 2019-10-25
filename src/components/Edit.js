@@ -40,7 +40,7 @@ class Edit extends Component {
 					this.props.history.push({
 						pathname: `/titles/${dessert.title}`
 					});
-				}, 2000);
+				}, 1000);
 			})
 			.catch(err => {
 				console.error(err);

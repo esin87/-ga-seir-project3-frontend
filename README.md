@@ -108,6 +108,8 @@ The diagram below shows the overall architecture of the backend of our applicati
    -  React form validation
    -  Frontend deployment
 
-Please drop any feedback into our issues page, and thanks for visiting our page!
+Please drop any feedback into this repo's issues, and thanks for visiting our page!
 
 ![Kenny Log-Ins Cake](./planning-info/pictures/ken-cake1.png)
+
+You can check out our backend repo hosted [here](https://github.com/esin87/ga-seir-project3). 
