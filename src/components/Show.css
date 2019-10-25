@@ -1,76 +1,92 @@
 .showImage {
-  width: 20%;
-  margin: auto;
-  border-radius: 10%;
+	width: 20%;
+	margin: auto;
+	border-radius: 10%;
 }
 .show-container {
-  background-image: url('../Project-3-Pictures/other/showBackG.jpg');
-  background-size: cover;
+	background-image: url('../Project-3-Pictures/other/showBackG.jpg');
+	background-size: cover;
 }
 .show-image-container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 40px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 40px;
 }
 .category {
-  text-align: left;
+	text-align: left;
 }
 .description {
-  text-align: left;
+	text-align: left;
 }
 .show-text-container {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 40px;
-  border-style: solid;
-  border-color: slateblue;
-  border-radius: 3%;
-  margin-top: 30px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 40px;
+	border-style: solid;
+	border-color: slateblue;
+	border-radius: 3%;
+	margin-top: 30px;
 }
 .IngList {
-  display: inline-block;
-  padding-right: 0.5em;
-  text-align: justify;
+	display: inline-block;
+	padding-right: 0.5em;
+	text-align: justify;
 }
 .makeIt {
-  display: inline-block;
-  padding-right: 0.5em;
-  text-align: justify;
+	display: inline-block;
+	padding-right: 0.5em;
+	text-align: justify;
 }
 /* notes around buttons */
 .smallText {
-  margin: 10px;
-  font-size: 0.6em;
-  color: black;
+	margin: 10px;
+	font-size: 0.6em;
+	color: black;
 }
 .edit {
-  margin: 30px;
-  padding: 6px 24px;
-  color: black;
-  border-radius: 6px;
-  border: 1px solid #ffaa22;
-  display: inline-block;
-  text-shadow: 0px 1px 0px #ffee66;
-  cursor: pointer;
+	margin: 30px;
+	padding: 6px 24px;
+	color: black;
+	border-radius: 6px;
+	border: 1px solid #ffaa22;
+	display: inline-block;
+	text-shadow: 0px 1px 0px #ffee66;
+	cursor: pointer;
 }
 .edit:hover {
-  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-  background-color: #ffab23;
+	background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color: #ffab23;
 }
 .areYouSure {
-  margin: 30px;
-  padding: 6px 24px;
-  color: red;
-  border-radius: 6px;
-  border: 1px solid #ffaa22;
-  display: inline-block;
-  text-shadow: 0px 1px 0px #ffee66;
-  cursor: pointer;
+	margin: 30px;
+	padding: 6px 24px;
+	color: red;
+	border-radius: 6px;
+	border: 1px solid #ffaa22;
+	display: inline-block;
+	text-shadow: 0px 1px 0px #ffee66;
+	cursor: pointer;
 }
 .areYouSure:hover {
-  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-  background-color: #ffab23;
+	background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color: #ffab23;
+}
+
+.jump-back-link a {
+	text-decoration: none;
+	color: black;
+	background-color: yellow;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.jump-back-link a:hover {
+	text-decoration: none;
+	color: rgb(8, 243, 20);
+	background-color: rgb(12, 12, 4);
+	padding: 5px;
+	border-radius: 50px;
 }

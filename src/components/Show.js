@@ -67,7 +67,7 @@ class Show extends Component {
 				<div className='show-text-container'>
 					<h2>{this.state.dessert.title}</h2>
 					<br></br>
-					<h5>
+					<h5 className='jump-back-link'>
 						Jump back to -{' '}
 						<Link to={`/categories/${this.state.dessert.category}`}>
 							{this.state.dessert.category}
