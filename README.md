@@ -4,7 +4,7 @@
 
 ## Description
 
-D[ang Good Dessert Zone](https://esin87.github.io/ga-seir-project3-frontend/) serves up delicious dessert recipes for the busy individual who is looking to satisfy their sweet tooth. Our users are looking for dessert inspiration in the form of fun, accessible recipes. Users can read, create, edit and delete any recipe on our application.
+[**Dang Good Dessert Zone**](https://esin87.github.io/ga-seir-project3-frontend/) serves up delicious dessert recipes for the busy individual who is looking to satisfy their sweet tooth. Our users are looking for dessert inspiration in the form of fun, accessible recipes. Users can read, create, edit and delete any recipe on our application.
 
 ## Technical Specifications
 
