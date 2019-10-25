@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Dashboard from './components/dashboard';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link, Redirect } from 'react-router-dom';
 import New from './components/new.js';
 import Show from './components/Show';
 import Edit from './components/Edit';
@@ -55,6 +55,7 @@ function App() {
 							path="/categories/:category"
 							render={routerProps => <Category {...routerProps} />}
 						/>
+						<Redirect to="/" />
 					</div>{' '}
 				</Switch>{' '}
 			</main>{' '}

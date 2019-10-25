@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//what is the below code for?
-import { promised } from 'q';
 import { Link } from 'react-router-dom';
 import './dashboard.css';
 import Cookies from './Cookies';
@@ -23,39 +21,39 @@ class Dashboard extends Component {
 
 	render() {
 		return (
-			<div className='dashContainer'>
-				<div className='cookie'>
-					<Link to='/categories/Cookies'>
-						<Cookies className='test' />
+			<div className="dashContainer">
+				<div className="cookie">
+					<Link to="/categories/Cookies">
+						<Cookies className="test" />
 					</Link>{' '}
 				</div>{' '}
-				<div className='cake'>
-					<Link to='/categories/Cakes'>
+				<div className="cake">
+					<Link to="/categories/Cakes">
 						<Cakes />
 					</Link>{' '}
 				</div>{' '}
-				<div className='candies'>
-					<Link to='/categories/Candies'>
+				<div className="candies">
+					<Link to="/categories/Candies">
 						<Candies />
 					</Link>{' '}
 				</div>{' '}
-				<div className='pastries'>
-					<Link to='/categories/Pastries'>
+				<div className="pastries">
+					<Link to="/categories/Pastries">
 						<Pastries />
 					</Link>{' '}
 				</div>{' '}
-				<div className='pies'>
-					<Link to='/categories/Pies'>
+				<div className="pies">
+					<Link to="/categories/Pies">
 						<Pies />
 					</Link>{' '}
 				</div>{' '}
-				<div className='brownies'>
-					<Link to='/categories/Brownies'>
+				<div className="brownies">
+					<Link to="/categories/Brownies">
 						<Brownies />
 					</Link>{' '}
 				</div>{' '}
-				<div className='other'>
-					<Link to='/categories/Other'>
+				<div className="other">
+					<Link to="/categories/Other">
 						<Other />
 					</Link>{' '}
 				</div>{' '}

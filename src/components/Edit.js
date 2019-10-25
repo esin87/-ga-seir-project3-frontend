@@ -49,7 +49,6 @@ class Edit extends Component {
 
 	//   component did mount method that finds and returns dessert by title from db
 	componentDidMount() {
-		console.log('component mounted');
 		const url = `https://d-z-desserts.herokuapp.com/titles/${this.props.match.params.title}`;
 
 		axios
