@@ -4,7 +4,7 @@
 
 ## Description
 
-Dang Good Dessert Zone serves up delicious dessert recipes for the busy individual who is looking to satisfy their sweet tooth. Our users are looking for dessert inspiration in the form of fun, accessible recipes. Users can read, create, edit and delete any recipe on our application.
+D[ang Good Dessert Zone](https://esin87.github.io/ga-seir-project3-frontend/) serves up delicious dessert recipes for the busy individual who is looking to satisfy their sweet tooth. Our users are looking for dessert inspiration in the form of fun, accessible recipes. Users can read, create, edit and delete any recipe on our application.
 
 ## Technical Specifications
 
@@ -112,4 +112,4 @@ Please drop any feedback into this repo's issues, and thanks for visiting our pa
 
 ![Kenny Log-Ins Cake](./planning-info/pictures/ken-cake1.png)
 
-You can check out our backend repo hosted [here](https://github.com/esin87/ga-seir-project3). 
+You can check out our backend repo hosted [here](https://github.com/esin87/ga-seir-project3).
