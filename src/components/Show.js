@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Show.css';
+import { Link } from 'react-router-dom';
+
 //setting up React components
 class Show extends Component {
 	constructor(props) {
@@ -54,41 +56,46 @@ class Show extends Component {
 			));
 		}
 		return (
-			<div className="show-container">
-				<div className="show-image-container">
+			<div className='show-container'>
+				<div className='show-image-container'>
 					<img
-						className="showImage"
+						className='showImage'
 						src={this.state.dessert.image}
 						alt={`This dessert is ${this.state.dessert.title}.`}
 					/>
 				</div>
-				<div className="show-text-container">
+				<div className='show-text-container'>
 					<h2>{this.state.dessert.title}</h2>
 					<br></br>
+					<h5>
+						Jump back to -{' '}
+						<Link to={`/categories/${this.state.dessert.category}`}>
+							{this.state.dessert.category}
+						</Link>{' '}
+					</h5>
+					<br></br>
 					<h5>Category: </h5>
-					<p className="category">{this.state.dessert.category}</p>
+					<p className='category'>{this.state.dessert.category}</p>
 					<br></br>
 					<h5>Description: </h5>
-					<p className="description">{this.state.dessert.description}</p>
+					<p className='description'>{this.state.dessert.description}</p>
 					<br></br>
 					<h5>Ingredients: </h5>
-					<ul className="IngList">
+					<ul className='IngList'>
 						{this.state.dessert.items && ingredientsList}
 					</ul>
 					<br></br>
 					<h5>Steps to make this dessert: </h5>
-					<ul className="makeIt">
-						{this.state.dessert.steps && stepsList}
-					</ul>
+					<ul className='makeIt'>{this.state.dessert.steps && stepsList}</ul>
 				</div>
-				<section className="smallText">Click Edit to make changes.</section>
-				<section className="smallText">
+				<section className='smallText'>Click Edit to make changes.</section>
+				<section className='smallText'>
 					No take backs. The delete button is for real.
 				</section>
-				<button onClick={this.edit} className="edit">
+				<button onClick={this.edit} className='edit'>
 					Edit
 				</button>
-				<button onClick={this.delete} className="areYouSure">
+				<button onClick={this.delete} className='areYouSure'>
 					Delete
 				</button>
 			</div>
